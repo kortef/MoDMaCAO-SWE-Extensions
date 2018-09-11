@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ Copyright (c) 2015-2017 Obeo, Inria
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ 	
+ Contributors:
+ - William Piers <william.piers@obeo.fr>
+ - Philippe Merle <philippe.merle@inria.fr>
+ - Faiez Zalila <faiez.zalila@inria.fr>
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ossweruntime -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="ossweruntime.presentation.OssweruntimeModelWizardID"
+            name="%_UI_OssweruntimeModelWizard_label"
+            class="ossweruntime.presentation.OssweruntimeModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/OssweruntimeModelFile.gif">
+         <description>%_UI_OssweruntimeModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ossweruntime -->
+      <editor
+            id="ossweruntime.presentation.OssweruntimeEditorID"
+            name="%_UI_OssweruntimeEditor_label"
+            icon="icons/full/obj16/OssweruntimeModelFile.gif"
+            extensions="ossweruntime"
+            class="ossweruntime.presentation.OssweruntimeEditor"
+            contributorClass="ossweruntime.presentation.OssweruntimeActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
