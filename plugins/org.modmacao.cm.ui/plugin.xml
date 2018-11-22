@@ -15,7 +15,7 @@
                enablesFor="+"
                id="org.modmacao.cm.ui.popupMenus.acceleoGenerateGenerateAnsiblerolesceletonsAction"
                icon="icons/default.gif"
-               label="Generate Generate Ansible role sceletons"
+               label="Generate Ansible role skeletons"
                menubarPath="org.eclipse.acceleo.module.menu/acceleo"/>
       </objectContribution>
    </extension>
