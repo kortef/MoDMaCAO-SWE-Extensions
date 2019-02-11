@@ -34,6 +34,7 @@ import sugarcrm.SugarcrmFactory;
 import sugarcrm.SugarcrmPackage;
 import sugarcrm.Sugarcrmapplication;
 import sugarcrm.Sugarcrmdatabase;
+import sugarcrm.Sugarcrmdatabaseconnection;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,6 +56,13 @@ public class SugarcrmPackageImpl extends EPackageImpl implements SugarcrmPackage
 	 * @generated
 	 */
 	private EClass sugarcrmdatabaseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sugarcrmdatabaseconnectionEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -220,6 +228,15 @@ public class SugarcrmPackageImpl extends EPackageImpl implements SugarcrmPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getSugarcrmdatabaseconnection() {
+		return sugarcrmdatabaseconnectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SugarcrmFactory getSugarcrmFactory() {
 		return (SugarcrmFactory)getEFactoryInstance();
 	}
@@ -254,6 +271,8 @@ public class SugarcrmPackageImpl extends EPackageImpl implements SugarcrmPackage
 		createEAttribute(sugarcrmdatabaseEClass, SUGARCRMDATABASE__DB_USER);
 		createEAttribute(sugarcrmdatabaseEClass, SUGARCRMDATABASE__DB_PASSWORD);
 		createEAttribute(sugarcrmdatabaseEClass, SUGARCRMDATABASE__DB_PORT);
+
+		sugarcrmdatabaseconnectionEClass = createEClass(SUGARCRMDATABASECONNECTION);
 	}
 
 	/**
@@ -292,6 +311,8 @@ public class SugarcrmPackageImpl extends EPackageImpl implements SugarcrmPackage
 		sugarcrmapplicationEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		sugarcrmdatabaseEClass.getESuperTypes().add(theModmacaoPackage.getComponent());
 		sugarcrmdatabaseEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		sugarcrmdatabaseconnectionEClass.getESuperTypes().add(theModmacaoPackage.getDependency());
+		sugarcrmdatabaseconnectionEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(sugarcrmapplicationEClass, Sugarcrmapplication.class, "Sugarcrmapplication", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -305,6 +326,8 @@ public class SugarcrmPackageImpl extends EPackageImpl implements SugarcrmPackage
 		initEAttribute(getSugarcrmdatabase_DBUser(), ecorePackage.getEString(), "dBUser", "sugarcrm", 0, 1, Sugarcrmdatabase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSugarcrmdatabase_DBPassword(), ecorePackage.getEString(), "dBPassword", "sugarcrm", 0, 1, Sugarcrmdatabase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSugarcrmdatabase_DBPort(), ecorePackage.getEInt(), "dBPort", "3306", 0, 1, Sugarcrmdatabase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(sugarcrmdatabaseconnectionEClass, Sugarcrmdatabaseconnection.class, "Sugarcrmdatabaseconnection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

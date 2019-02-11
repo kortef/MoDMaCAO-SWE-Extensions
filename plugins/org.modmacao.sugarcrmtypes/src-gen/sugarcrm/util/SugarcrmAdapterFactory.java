@@ -14,6 +14,7 @@ package sugarcrm.util;
 
 import modmacao.Component;
 
+import modmacao.Dependency;
 import org.eclipse.cmf.occi.core.MixinBase;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -90,12 +91,20 @@ public class SugarcrmAdapterFactory extends AdapterFactoryImpl {
 				return createSugarcrmdatabaseAdapter();
 			}
 			@Override
+			public Adapter caseSugarcrmdatabaseconnection(Sugarcrmdatabaseconnection object) {
+				return createSugarcrmdatabaseconnectionAdapter();
+			}
+			@Override
 			public Adapter caseMixinBase(MixinBase object) {
 				return createMixinBaseAdapter();
 			}
 			@Override
 			public Adapter caseComponent(Component object) {
 				return createComponentAdapter();
+			}
+			@Override
+			public Adapter caseDependency(Dependency object) {
+				return createDependencyAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -146,6 +155,20 @@ public class SugarcrmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link sugarcrm.Sugarcrmdatabaseconnection <em>Sugarcrmdatabaseconnection</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see sugarcrm.Sugarcrmdatabaseconnection
+	 * @generated
+	 */
+	public Adapter createSugarcrmdatabaseconnectionAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.cmf.occi.core.MixinBase <em>Mixin Base</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -170,6 +193,20 @@ public class SugarcrmAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createComponentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link modmacao.Dependency <em>Dependency</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see modmacao.Dependency
+	 * @generated
+	 */
+	public Adapter createDependencyAdapter() {
 		return null;
 	}
 

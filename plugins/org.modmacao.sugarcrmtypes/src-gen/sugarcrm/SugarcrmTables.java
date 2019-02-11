@@ -91,10 +91,12 @@ public class SugarcrmTables
 
 		public static final /*@NonNull*/ EcoreExecutorType _Sugarcrmapplication = new EcoreExecutorType(SugarcrmPackage.Literals.SUGARCRMAPPLICATION, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Sugarcrmdatabase = new EcoreExecutorType(SugarcrmPackage.Literals.SUGARCRMDATABASE, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Sugarcrmdatabaseconnection = new EcoreExecutorType(SugarcrmPackage.Literals.SUGARCRMDATABASECONNECTION, PACKAGE, 0);
 
 		private static final /*@NonNull*/ EcoreExecutorType /*@NonNull*/ [] types = {
 			_Sugarcrmapplication,
-			_Sugarcrmdatabase
+			_Sugarcrmdatabase,
+			_Sugarcrmdatabaseconnection
 		};
 
 		/*
@@ -131,6 +133,12 @@ public class SugarcrmTables
 		private static final /*@NonNull*/ ExecutorFragment _Sugarcrmdatabase__OclAny = new ExecutorFragment(Types._Sugarcrmdatabase, OCLstdlibTables.Types._OclAny);
 		private static final /*@NonNull*/ ExecutorFragment _Sugarcrmdatabase__OclElement = new ExecutorFragment(Types._Sugarcrmdatabase, OCLstdlibTables.Types._OclElement);
 		private static final /*@NonNull*/ ExecutorFragment _Sugarcrmdatabase__Sugarcrmdatabase = new ExecutorFragment(Types._Sugarcrmdatabase, SugarcrmTables.Types._Sugarcrmdatabase);
+
+		private static final /*@NonNull*/ ExecutorFragment _Sugarcrmdatabaseconnection__Dependency = new ExecutorFragment(Types._Sugarcrmdatabaseconnection, ModmacaoTables.Types._Dependency);
+		private static final /*@NonNull*/ ExecutorFragment _Sugarcrmdatabaseconnection__MixinBase = new ExecutorFragment(Types._Sugarcrmdatabaseconnection, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Sugarcrmdatabaseconnection__OclAny = new ExecutorFragment(Types._Sugarcrmdatabaseconnection, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Sugarcrmdatabaseconnection__OclElement = new ExecutorFragment(Types._Sugarcrmdatabaseconnection, OCLstdlibTables.Types._OclElement);
+		private static final /*@NonNull*/ ExecutorFragment _Sugarcrmdatabaseconnection__Sugarcrmdatabaseconnection = new ExecutorFragment(Types._Sugarcrmdatabaseconnection, SugarcrmTables.Types._Sugarcrmdatabaseconnection);
 
 		static {
 			Init.initEnd();
@@ -250,12 +258,23 @@ public class SugarcrmTables
 			};
 		private static final int /*@NonNull*/ [] __Sugarcrmdatabase = { 1,1,1,1,1 };
 
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Sugarcrmdatabaseconnection =
+			{
+				Fragments._Sugarcrmdatabaseconnection__OclAny /* 0 */,
+				Fragments._Sugarcrmdatabaseconnection__OclElement /* 1 */,
+				Fragments._Sugarcrmdatabaseconnection__MixinBase /* 2 */,
+				Fragments._Sugarcrmdatabaseconnection__Dependency /* 3 */,
+				Fragments._Sugarcrmdatabaseconnection__Sugarcrmdatabaseconnection /* 4 */
+			};
+		private static final int /*@NonNull*/ [] __Sugarcrmdatabaseconnection = { 1,1,1,1,1 };
+
 		/**
 		 *	Install the fragment descriptors in the class descriptors.
 		 */
 		static {
 			Types._Sugarcrmapplication.initFragments(_Sugarcrmapplication, __Sugarcrmapplication);
 			Types._Sugarcrmdatabase.initFragments(_Sugarcrmdatabase, __Sugarcrmdatabase);
+			Types._Sugarcrmdatabaseconnection.initFragments(_Sugarcrmdatabaseconnection, __Sugarcrmdatabaseconnection);
 
 			Init.initEnd();
 		}
@@ -335,6 +354,36 @@ public class SugarcrmTables
 			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
 		};
 
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Sugarcrmdatabaseconnection__Sugarcrmdatabaseconnection = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Sugarcrmdatabaseconnection__Dependency = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Sugarcrmdatabaseconnection__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Sugarcrmdatabaseconnection__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Sugarcrmdatabaseconnection__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
+
 		/*
 		 *	Install the operation descriptors in the fragment descriptors.
 		 */
@@ -350,6 +399,12 @@ public class SugarcrmTables
 			Fragments._Sugarcrmdatabase__OclAny.initOperations(_Sugarcrmdatabase__OclAny);
 			Fragments._Sugarcrmdatabase__OclElement.initOperations(_Sugarcrmdatabase__OclElement);
 			Fragments._Sugarcrmdatabase__Sugarcrmdatabase.initOperations(_Sugarcrmdatabase__Sugarcrmdatabase);
+
+			Fragments._Sugarcrmdatabaseconnection__Dependency.initOperations(_Sugarcrmdatabaseconnection__Dependency);
+			Fragments._Sugarcrmdatabaseconnection__MixinBase.initOperations(_Sugarcrmdatabaseconnection__MixinBase);
+			Fragments._Sugarcrmdatabaseconnection__OclAny.initOperations(_Sugarcrmdatabaseconnection__OclAny);
+			Fragments._Sugarcrmdatabaseconnection__OclElement.initOperations(_Sugarcrmdatabaseconnection__OclElement);
+			Fragments._Sugarcrmdatabaseconnection__Sugarcrmdatabaseconnection.initOperations(_Sugarcrmdatabaseconnection__Sugarcrmdatabaseconnection);
 
 			Init.initEnd();
 		}
@@ -383,12 +438,15 @@ public class SugarcrmTables
 			SugarcrmTables.Properties._Sugarcrmdatabase__dBUser
 		};
 
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Sugarcrmdatabaseconnection = {};
+
 		/**
 		 *	Install the property descriptors in the fragment descriptors.
 		 */
 		static {
 			Fragments._Sugarcrmapplication__Sugarcrmapplication.initProperties(_Sugarcrmapplication);
 			Fragments._Sugarcrmdatabase__Sugarcrmdatabase.initProperties(_Sugarcrmdatabase);
+			Fragments._Sugarcrmdatabaseconnection__Sugarcrmdatabaseconnection.initProperties(_Sugarcrmdatabaseconnection);
 
 			Init.initEnd();
 		}

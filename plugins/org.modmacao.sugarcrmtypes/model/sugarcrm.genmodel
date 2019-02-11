@@ -36,6 +36,9 @@
         <ecoreFeature xsi:type="ecore:EAttribute" href="sugarcrm.ecore#//Sugarcrmdatabase/dBPort"/>
       </genFeatures>
     </genClasses>
+    <genClasses>
+      <ecoreClass href="sugarcrm.ecore#//Sugarcrmdatabaseconnection"/>
+    </genClasses>
   </genPackages>
   <usedGenPackages href="platform:/plugin/org.modmacao.occi.platform/model/platform.genmodel#//platform"/>
   <usedGenPackages href="platform:/plugin/org.modmacao.core/model/modmacao.genmodel#//modmacao"/>

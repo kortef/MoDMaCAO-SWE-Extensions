@@ -67,4 +67,5 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sugarcrmdatabaseconnection" eSuperTypes="platform:/plugin/org.modmacao.core/model/modmacao.ecore#//Dependency platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase"/>
 </ecore:EPackage>

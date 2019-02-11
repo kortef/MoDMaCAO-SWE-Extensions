@@ -68,6 +68,7 @@ public class SugarcrmFactoryImpl extends EFactoryImpl implements SugarcrmFactory
 		switch (eClass.getClassifierID()) {
 			case SugarcrmPackage.SUGARCRMAPPLICATION: return createSugarcrmapplication();
 			case SugarcrmPackage.SUGARCRMDATABASE: return createSugarcrmdatabase();
+			case SugarcrmPackage.SUGARCRMDATABASECONNECTION: return createSugarcrmdatabaseconnection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -91,6 +92,16 @@ public class SugarcrmFactoryImpl extends EFactoryImpl implements SugarcrmFactory
 	public Sugarcrmdatabase createSugarcrmdatabase() {
 		SugarcrmdatabaseImpl sugarcrmdatabase = new SugarcrmdatabaseImpl();
 		return sugarcrmdatabase;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Sugarcrmdatabaseconnection createSugarcrmdatabaseconnection() {
+		SugarcrmdatabaseconnectionImpl sugarcrmdatabaseconnection = new SugarcrmdatabaseconnectionImpl();
+		return sugarcrmdatabaseconnection;
 	}
 
 	/**

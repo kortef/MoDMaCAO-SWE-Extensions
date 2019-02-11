@@ -269,6 +269,62 @@ public interface SugarcrmPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link sugarcrm.impl.SugarcrmdatabaseconnectionImpl <em>Sugarcrmdatabaseconnection</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see sugarcrm.impl.SugarcrmdatabaseconnectionImpl
+	 * @see sugarcrm.impl.SugarcrmPackageImpl#getSugarcrmdatabaseconnection()
+	 * @generated
+	 */
+	int SUGARCRMDATABASECONNECTION = 2;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUGARCRMDATABASECONNECTION__MIXIN = ModmacaoPackage.DEPENDENCY__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUGARCRMDATABASECONNECTION__ENTITY = ModmacaoPackage.DEPENDENCY__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUGARCRMDATABASECONNECTION__ATTRIBUTES = ModmacaoPackage.DEPENDENCY__ATTRIBUTES;
+
+	/**
+	 * The number of structural features of the '<em>Sugarcrmdatabaseconnection</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUGARCRMDATABASECONNECTION_FEATURE_COUNT = ModmacaoPackage.DEPENDENCY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Sugarcrmdatabaseconnection</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUGARCRMDATABASECONNECTION_OPERATION_COUNT = ModmacaoPackage.DEPENDENCY_OPERATION_COUNT + 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link sugarcrm.Sugarcrmapplication <em>Sugarcrmapplication</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -377,6 +433,16 @@ public interface SugarcrmPackage extends EPackage {
 	EAttribute getSugarcrmdatabase_DBPort();
 
 	/**
+	 * Returns the meta object for class '{@link sugarcrm.Sugarcrmdatabaseconnection <em>Sugarcrmdatabaseconnection</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sugarcrmdatabaseconnection</em>'.
+	 * @see sugarcrm.Sugarcrmdatabaseconnection
+	 * @generated
+	 */
+	EClass getSugarcrmdatabaseconnection();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -482,6 +548,16 @@ public interface SugarcrmPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SUGARCRMDATABASE__DB_PORT = eINSTANCE.getSugarcrmdatabase_DBPort();
+
+		/**
+		 * The meta object literal for the '{@link sugarcrm.impl.SugarcrmdatabaseconnectionImpl <em>Sugarcrmdatabaseconnection</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see sugarcrm.impl.SugarcrmdatabaseconnectionImpl
+		 * @see sugarcrm.impl.SugarcrmPackageImpl#getSugarcrmdatabaseconnection()
+		 * @generated
+		 */
+		EClass SUGARCRMDATABASECONNECTION = eINSTANCE.getSugarcrmdatabaseconnection();
 
 	}
 

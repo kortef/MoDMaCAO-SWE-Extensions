@@ -50,6 +50,15 @@ public interface SugarcrmFactory extends EFactory {
 	Sugarcrmdatabase createSugarcrmdatabase();
 
 	/**
+	 * Returns a new object of class '<em>Sugarcrmdatabaseconnection</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sugarcrmdatabaseconnection</em>'.
+	 * @generated
+	 */
+	Sugarcrmdatabaseconnection createSugarcrmdatabaseconnection();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

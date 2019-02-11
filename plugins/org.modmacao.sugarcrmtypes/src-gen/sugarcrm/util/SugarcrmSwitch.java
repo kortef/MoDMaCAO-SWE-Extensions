@@ -14,6 +14,7 @@ package sugarcrm.util;
 
 import modmacao.Component;
 
+import modmacao.Dependency;
 import org.eclipse.cmf.occi.core.MixinBase;
 
 import org.eclipse.emf.ecore.EObject;
@@ -96,6 +97,14 @@ public class SugarcrmSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case SugarcrmPackage.SUGARCRMDATABASECONNECTION: {
+				Sugarcrmdatabaseconnection sugarcrmdatabaseconnection = (Sugarcrmdatabaseconnection)theEObject;
+				T result = caseSugarcrmdatabaseconnection(sugarcrmdatabaseconnection);
+				if (result == null) result = caseDependency(sugarcrmdatabaseconnection);
+				if (result == null) result = caseMixinBase(sugarcrmdatabaseconnection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -131,6 +140,21 @@ public class SugarcrmSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sugarcrmdatabaseconnection</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sugarcrmdatabaseconnection</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSugarcrmdatabaseconnection(Sugarcrmdatabaseconnection object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Mixin Base</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -157,6 +181,21 @@ public class SugarcrmSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseComponent(Component object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Dependency</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Dependency</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDependency(Dependency object) {
 		return null;
 	}
 
