@@ -29,4 +29,10 @@
   <mixins name="MySQLDatabase" scheme="http://schemas.modmacao.org/toscaspecifictypes#">
     <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
   </mixins>
+  <mixins name="MySQLDatabaseHostedOnMySQL" scheme="http://schemas.modmacao.org/toscaspecifictypes#">
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='dependency']"/>
+  </mixins>
+  <mixins name="MySQLDatabaseConnection" scheme="http://schemas.modmacao.org/toscaspecifictypes#">
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='dependency']"/>
+  </mixins>
 </occi:Extension>

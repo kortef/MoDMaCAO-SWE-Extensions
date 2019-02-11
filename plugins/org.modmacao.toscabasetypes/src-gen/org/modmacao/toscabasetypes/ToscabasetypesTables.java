@@ -89,10 +89,14 @@ public class ToscabasetypesTables
 			TypeParameters.init();
 		}
 
+		public static final /*@NonNull*/ EcoreExecutorType _Connectsto = new EcoreExecutorType(ToscabasetypesPackage.Literals.CONNECTSTO, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Database = new EcoreExecutorType(ToscabasetypesPackage.Literals.DATABASE, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Dbms = new EcoreExecutorType(ToscabasetypesPackage.Literals.DBMS, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Dependson = new EcoreExecutorType(ToscabasetypesPackage.Literals.DEPENDSON, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Hostedon = new EcoreExecutorType(ToscabasetypesPackage.Literals.HOSTEDON, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Operatingsystem = new EcoreExecutorType(ToscabasetypesPackage.Literals.OPERATINGSYSTEM, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Rootnodetype = new EcoreExecutorType(ToscabasetypesPackage.Literals.ROOTNODETYPE, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Rootrelationshiptype = new EcoreExecutorType(ToscabasetypesPackage.Literals.ROOTRELATIONSHIPTYPE, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Scalabletier = new EcoreExecutorType(ToscabasetypesPackage.Literals.SCALABLETIER, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Server = new EcoreExecutorType(ToscabasetypesPackage.Literals.SERVER, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Singlenodetier = new EcoreExecutorType(ToscabasetypesPackage.Literals.SINGLENODETIER, PACKAGE, 0);
@@ -101,10 +105,14 @@ public class ToscabasetypesTables
 		public static final /*@NonNull*/ EcoreExecutorType _Webserver = new EcoreExecutorType(ToscabasetypesPackage.Literals.WEBSERVER, PACKAGE, 0);
 
 		private static final /*@NonNull*/ EcoreExecutorType /*@NonNull*/ [] types = {
+			_Connectsto,
 			_Database,
 			_Dbms,
+			_Dependson,
+			_Hostedon,
 			_Operatingsystem,
 			_Rootnodetype,
+			_Rootrelationshiptype,
 			_Scalabletier,
 			_Server,
 			_Singlenodetier,
@@ -136,6 +144,12 @@ public class ToscabasetypesTables
 			Types.init();
 		}
 
+		private static final /*@NonNull*/ ExecutorFragment _Connectsto__Connectsto = new ExecutorFragment(Types._Connectsto, ToscabasetypesTables.Types._Connectsto);
+		private static final /*@NonNull*/ ExecutorFragment _Connectsto__Dependency = new ExecutorFragment(Types._Connectsto, ModmacaoTables.Types._Dependency);
+		private static final /*@NonNull*/ ExecutorFragment _Connectsto__MixinBase = new ExecutorFragment(Types._Connectsto, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Connectsto__OclAny = new ExecutorFragment(Types._Connectsto, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Connectsto__OclElement = new ExecutorFragment(Types._Connectsto, OCLstdlibTables.Types._OclElement);
+
 		private static final /*@NonNull*/ ExecutorFragment _Database__Component = new ExecutorFragment(Types._Database, ModmacaoTables.Types._Component);
 		private static final /*@NonNull*/ ExecutorFragment _Database__Database = new ExecutorFragment(Types._Database, ToscabasetypesTables.Types._Database);
 		private static final /*@NonNull*/ ExecutorFragment _Database__MixinBase = new ExecutorFragment(Types._Database, OCCITables.Types._MixinBase);
@@ -148,6 +162,18 @@ public class ToscabasetypesTables
 		private static final /*@NonNull*/ ExecutorFragment _Dbms__OclAny = new ExecutorFragment(Types._Dbms, OCLstdlibTables.Types._OclAny);
 		private static final /*@NonNull*/ ExecutorFragment _Dbms__OclElement = new ExecutorFragment(Types._Dbms, OCLstdlibTables.Types._OclElement);
 
+		private static final /*@NonNull*/ ExecutorFragment _Dependson__Dependency = new ExecutorFragment(Types._Dependson, ModmacaoTables.Types._Dependency);
+		private static final /*@NonNull*/ ExecutorFragment _Dependson__Dependson = new ExecutorFragment(Types._Dependson, ToscabasetypesTables.Types._Dependson);
+		private static final /*@NonNull*/ ExecutorFragment _Dependson__MixinBase = new ExecutorFragment(Types._Dependson, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Dependson__OclAny = new ExecutorFragment(Types._Dependson, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Dependson__OclElement = new ExecutorFragment(Types._Dependson, OCLstdlibTables.Types._OclElement);
+
+		private static final /*@NonNull*/ ExecutorFragment _Hostedon__Dependency = new ExecutorFragment(Types._Hostedon, ModmacaoTables.Types._Dependency);
+		private static final /*@NonNull*/ ExecutorFragment _Hostedon__Hostedon = new ExecutorFragment(Types._Hostedon, ToscabasetypesTables.Types._Hostedon);
+		private static final /*@NonNull*/ ExecutorFragment _Hostedon__MixinBase = new ExecutorFragment(Types._Hostedon, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Hostedon__OclAny = new ExecutorFragment(Types._Hostedon, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Hostedon__OclElement = new ExecutorFragment(Types._Hostedon, OCLstdlibTables.Types._OclElement);
+
 		private static final /*@NonNull*/ ExecutorFragment _Operatingsystem__Component = new ExecutorFragment(Types._Operatingsystem, ModmacaoTables.Types._Component);
 		private static final /*@NonNull*/ ExecutorFragment _Operatingsystem__MixinBase = new ExecutorFragment(Types._Operatingsystem, OCCITables.Types._MixinBase);
 		private static final /*@NonNull*/ ExecutorFragment _Operatingsystem__OclAny = new ExecutorFragment(Types._Operatingsystem, OCLstdlibTables.Types._OclAny);
@@ -159,6 +185,12 @@ public class ToscabasetypesTables
 		private static final /*@NonNull*/ ExecutorFragment _Rootnodetype__OclAny = new ExecutorFragment(Types._Rootnodetype, OCLstdlibTables.Types._OclAny);
 		private static final /*@NonNull*/ ExecutorFragment _Rootnodetype__OclElement = new ExecutorFragment(Types._Rootnodetype, OCLstdlibTables.Types._OclElement);
 		private static final /*@NonNull*/ ExecutorFragment _Rootnodetype__Rootnodetype = new ExecutorFragment(Types._Rootnodetype, ToscabasetypesTables.Types._Rootnodetype);
+
+		private static final /*@NonNull*/ ExecutorFragment _Rootrelationshiptype__Dependency = new ExecutorFragment(Types._Rootrelationshiptype, ModmacaoTables.Types._Dependency);
+		private static final /*@NonNull*/ ExecutorFragment _Rootrelationshiptype__MixinBase = new ExecutorFragment(Types._Rootrelationshiptype, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Rootrelationshiptype__OclAny = new ExecutorFragment(Types._Rootrelationshiptype, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Rootrelationshiptype__OclElement = new ExecutorFragment(Types._Rootrelationshiptype, OCLstdlibTables.Types._OclElement);
+		private static final /*@NonNull*/ ExecutorFragment _Rootrelationshiptype__Rootrelationshiptype = new ExecutorFragment(Types._Rootrelationshiptype, ToscabasetypesTables.Types._Rootrelationshiptype);
 
 		private static final /*@NonNull*/ ExecutorFragment _Scalabletier__Component = new ExecutorFragment(Types._Scalabletier, ModmacaoTables.Types._Component);
 		private static final /*@NonNull*/ ExecutorFragment _Scalabletier__MixinBase = new ExecutorFragment(Types._Scalabletier, OCCITables.Types._MixinBase);
@@ -288,6 +320,16 @@ public class ToscabasetypesTables
 			Properties.init();
 		}
 
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Connectsto =
+			{
+				Fragments._Connectsto__OclAny /* 0 */,
+				Fragments._Connectsto__OclElement /* 1 */,
+				Fragments._Connectsto__MixinBase /* 2 */,
+				Fragments._Connectsto__Dependency /* 3 */,
+				Fragments._Connectsto__Connectsto /* 4 */
+			};
+		private static final int /*@NonNull*/ [] __Connectsto = { 1,1,1,1,1 };
+
 		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Database =
 			{
 				Fragments._Database__OclAny /* 0 */,
@@ -308,6 +350,26 @@ public class ToscabasetypesTables
 			};
 		private static final int /*@NonNull*/ [] __Dbms = { 1,1,1,1,1 };
 
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Dependson =
+			{
+				Fragments._Dependson__OclAny /* 0 */,
+				Fragments._Dependson__OclElement /* 1 */,
+				Fragments._Dependson__MixinBase /* 2 */,
+				Fragments._Dependson__Dependency /* 3 */,
+				Fragments._Dependson__Dependson /* 4 */
+			};
+		private static final int /*@NonNull*/ [] __Dependson = { 1,1,1,1,1 };
+
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Hostedon =
+			{
+				Fragments._Hostedon__OclAny /* 0 */,
+				Fragments._Hostedon__OclElement /* 1 */,
+				Fragments._Hostedon__MixinBase /* 2 */,
+				Fragments._Hostedon__Dependency /* 3 */,
+				Fragments._Hostedon__Hostedon /* 4 */
+			};
+		private static final int /*@NonNull*/ [] __Hostedon = { 1,1,1,1,1 };
+
 		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Operatingsystem =
 			{
 				Fragments._Operatingsystem__OclAny /* 0 */,
@@ -327,6 +389,16 @@ public class ToscabasetypesTables
 				Fragments._Rootnodetype__Rootnodetype /* 4 */
 			};
 		private static final int /*@NonNull*/ [] __Rootnodetype = { 1,1,1,1,1 };
+
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Rootrelationshiptype =
+			{
+				Fragments._Rootrelationshiptype__OclAny /* 0 */,
+				Fragments._Rootrelationshiptype__OclElement /* 1 */,
+				Fragments._Rootrelationshiptype__MixinBase /* 2 */,
+				Fragments._Rootrelationshiptype__Dependency /* 3 */,
+				Fragments._Rootrelationshiptype__Rootrelationshiptype /* 4 */
+			};
+		private static final int /*@NonNull*/ [] __Rootrelationshiptype = { 1,1,1,1,1 };
 
 		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Scalabletier =
 			{
@@ -392,10 +464,14 @@ public class ToscabasetypesTables
 		 *	Install the fragment descriptors in the class descriptors.
 		 */
 		static {
+			Types._Connectsto.initFragments(_Connectsto, __Connectsto);
 			Types._Database.initFragments(_Database, __Database);
 			Types._Dbms.initFragments(_Dbms, __Dbms);
+			Types._Dependson.initFragments(_Dependson, __Dependson);
+			Types._Hostedon.initFragments(_Hostedon, __Hostedon);
 			Types._Operatingsystem.initFragments(_Operatingsystem, __Operatingsystem);
 			Types._Rootnodetype.initFragments(_Rootnodetype, __Rootnodetype);
+			Types._Rootrelationshiptype.initFragments(_Rootrelationshiptype, __Rootrelationshiptype);
 			Types._Scalabletier.initFragments(_Scalabletier, __Scalabletier);
 			Types._Server.initFragments(_Server, __Server);
 			Types._Singlenodetier.initFragments(_Singlenodetier, __Singlenodetier);
@@ -420,6 +496,36 @@ public class ToscabasetypesTables
 			Init.initStart();
 			TypeFragments.init();
 		}
+
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Connectsto__Connectsto = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Connectsto__Dependency = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Connectsto__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Connectsto__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Connectsto__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
 
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Database__Database = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Database__Component = {};
@@ -481,6 +587,66 @@ public class ToscabasetypesTables
 			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
 		};
 
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Dependson__Dependson = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Dependson__Dependency = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Dependson__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Dependson__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Dependson__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
+
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Hostedon__Hostedon = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Hostedon__Dependency = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Hostedon__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Hostedon__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Hostedon__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
+
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Operatingsystem__Operatingsystem = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Operatingsystem__Component = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Operatingsystem__MixinBase = {};
@@ -532,6 +698,36 @@ public class ToscabasetypesTables
 			OCLstdlibTables.Operations._OclAny__toString /* toString() */
 		};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Rootnodetype__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
+
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Rootrelationshiptype__Rootrelationshiptype = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Rootrelationshiptype__Dependency = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Rootrelationshiptype__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Rootrelationshiptype__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Rootrelationshiptype__OclElement = {
 			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
 			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
 			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
@@ -725,6 +921,12 @@ public class ToscabasetypesTables
 		 *	Install the operation descriptors in the fragment descriptors.
 		 */
 		static {
+			Fragments._Connectsto__Connectsto.initOperations(_Connectsto__Connectsto);
+			Fragments._Connectsto__Dependency.initOperations(_Connectsto__Dependency);
+			Fragments._Connectsto__MixinBase.initOperations(_Connectsto__MixinBase);
+			Fragments._Connectsto__OclAny.initOperations(_Connectsto__OclAny);
+			Fragments._Connectsto__OclElement.initOperations(_Connectsto__OclElement);
+
 			Fragments._Database__Component.initOperations(_Database__Component);
 			Fragments._Database__Database.initOperations(_Database__Database);
 			Fragments._Database__MixinBase.initOperations(_Database__MixinBase);
@@ -737,6 +939,18 @@ public class ToscabasetypesTables
 			Fragments._Dbms__OclAny.initOperations(_Dbms__OclAny);
 			Fragments._Dbms__OclElement.initOperations(_Dbms__OclElement);
 
+			Fragments._Dependson__Dependency.initOperations(_Dependson__Dependency);
+			Fragments._Dependson__Dependson.initOperations(_Dependson__Dependson);
+			Fragments._Dependson__MixinBase.initOperations(_Dependson__MixinBase);
+			Fragments._Dependson__OclAny.initOperations(_Dependson__OclAny);
+			Fragments._Dependson__OclElement.initOperations(_Dependson__OclElement);
+
+			Fragments._Hostedon__Dependency.initOperations(_Hostedon__Dependency);
+			Fragments._Hostedon__Hostedon.initOperations(_Hostedon__Hostedon);
+			Fragments._Hostedon__MixinBase.initOperations(_Hostedon__MixinBase);
+			Fragments._Hostedon__OclAny.initOperations(_Hostedon__OclAny);
+			Fragments._Hostedon__OclElement.initOperations(_Hostedon__OclElement);
+
 			Fragments._Operatingsystem__Component.initOperations(_Operatingsystem__Component);
 			Fragments._Operatingsystem__MixinBase.initOperations(_Operatingsystem__MixinBase);
 			Fragments._Operatingsystem__OclAny.initOperations(_Operatingsystem__OclAny);
@@ -748,6 +962,12 @@ public class ToscabasetypesTables
 			Fragments._Rootnodetype__OclAny.initOperations(_Rootnodetype__OclAny);
 			Fragments._Rootnodetype__OclElement.initOperations(_Rootnodetype__OclElement);
 			Fragments._Rootnodetype__Rootnodetype.initOperations(_Rootnodetype__Rootnodetype);
+
+			Fragments._Rootrelationshiptype__Dependency.initOperations(_Rootrelationshiptype__Dependency);
+			Fragments._Rootrelationshiptype__MixinBase.initOperations(_Rootrelationshiptype__MixinBase);
+			Fragments._Rootrelationshiptype__OclAny.initOperations(_Rootrelationshiptype__OclAny);
+			Fragments._Rootrelationshiptype__OclElement.initOperations(_Rootrelationshiptype__OclElement);
+			Fragments._Rootrelationshiptype__Rootrelationshiptype.initOperations(_Rootrelationshiptype__Rootrelationshiptype);
 
 			Fragments._Scalabletier__Component.initOperations(_Scalabletier__Component);
 			Fragments._Scalabletier__MixinBase.initOperations(_Scalabletier__MixinBase);
@@ -803,13 +1023,21 @@ public class ToscabasetypesTables
 			FragmentOperations.init();
 		}
 
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Connectsto = {};
+
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Database = {};
 
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Dbms = {};
 
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Dependson = {};
+
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Hostedon = {};
+
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Operatingsystem = {};
 
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Rootnodetype = {};
+
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Rootrelationshiptype = {};
 
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Scalabletier = {};
 
@@ -830,10 +1058,14 @@ public class ToscabasetypesTables
 		 *	Install the property descriptors in the fragment descriptors.
 		 */
 		static {
+			Fragments._Connectsto__Connectsto.initProperties(_Connectsto);
 			Fragments._Database__Database.initProperties(_Database);
 			Fragments._Dbms__Dbms.initProperties(_Dbms);
+			Fragments._Dependson__Dependson.initProperties(_Dependson);
+			Fragments._Hostedon__Hostedon.initProperties(_Hostedon);
 			Fragments._Operatingsystem__Operatingsystem.initProperties(_Operatingsystem);
 			Fragments._Rootnodetype__Rootnodetype.initProperties(_Rootnodetype);
+			Fragments._Rootrelationshiptype__Rootrelationshiptype.initProperties(_Rootrelationshiptype);
 			Fragments._Scalabletier__Scalabletier.initProperties(_Scalabletier);
 			Fragments._Server__Server.initProperties(_Server);
 			Fragments._Singlenodetier__Singlenodetier.initProperties(_Singlenodetier);

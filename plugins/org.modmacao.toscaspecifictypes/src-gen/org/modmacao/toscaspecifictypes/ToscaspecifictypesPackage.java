@@ -471,6 +471,117 @@ public interface ToscaspecifictypesPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.modmacao.toscaspecifictypes.impl.MysqldatabasehostedonmysqlImpl <em>Mysqldatabasehostedonmysql</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.modmacao.toscaspecifictypes.impl.MysqldatabasehostedonmysqlImpl
+	 * @see org.modmacao.toscaspecifictypes.impl.ToscaspecifictypesPackageImpl#getMysqldatabasehostedonmysql()
+	 * @generated
+	 */
+	int MYSQLDATABASEHOSTEDONMYSQL = 6;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MYSQLDATABASEHOSTEDONMYSQL__MIXIN = ModmacaoPackage.DEPENDENCY__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MYSQLDATABASEHOSTEDONMYSQL__ENTITY = ModmacaoPackage.DEPENDENCY__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MYSQLDATABASEHOSTEDONMYSQL__ATTRIBUTES = ModmacaoPackage.DEPENDENCY__ATTRIBUTES;
+
+	/**
+	 * The number of structural features of the '<em>Mysqldatabasehostedonmysql</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MYSQLDATABASEHOSTEDONMYSQL_FEATURE_COUNT = ModmacaoPackage.DEPENDENCY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Mysqldatabasehostedonmysql</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MYSQLDATABASEHOSTEDONMYSQL_OPERATION_COUNT = ModmacaoPackage.DEPENDENCY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.modmacao.toscaspecifictypes.impl.MysqldatabaseconnectionImpl <em>Mysqldatabaseconnection</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.modmacao.toscaspecifictypes.impl.MysqldatabaseconnectionImpl
+	 * @see org.modmacao.toscaspecifictypes.impl.ToscaspecifictypesPackageImpl#getMysqldatabaseconnection()
+	 * @generated
+	 */
+	int MYSQLDATABASECONNECTION = 7;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MYSQLDATABASECONNECTION__MIXIN = ModmacaoPackage.DEPENDENCY__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MYSQLDATABASECONNECTION__ENTITY = ModmacaoPackage.DEPENDENCY__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MYSQLDATABASECONNECTION__ATTRIBUTES = ModmacaoPackage.DEPENDENCY__ATTRIBUTES;
+
+	/**
+	 * The number of structural features of the '<em>Mysqldatabaseconnection</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MYSQLDATABASECONNECTION_FEATURE_COUNT = ModmacaoPackage.DEPENDENCY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Mysqldatabaseconnection</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MYSQLDATABASECONNECTION_OPERATION_COUNT = ModmacaoPackage.DEPENDENCY_OPERATION_COUNT + 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link org.modmacao.toscaspecifictypes.Apachewebserver <em>Apachewebserver</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -551,6 +662,26 @@ public interface ToscaspecifictypesPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getMysqldatabase();
+
+	/**
+	 * Returns the meta object for class '{@link org.modmacao.toscaspecifictypes.Mysqldatabasehostedonmysql <em>Mysqldatabasehostedonmysql</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mysqldatabasehostedonmysql</em>'.
+	 * @see org.modmacao.toscaspecifictypes.Mysqldatabasehostedonmysql
+	 * @generated
+	 */
+	EClass getMysqldatabasehostedonmysql();
+
+	/**
+	 * Returns the meta object for class '{@link org.modmacao.toscaspecifictypes.Mysqldatabaseconnection <em>Mysqldatabaseconnection</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mysqldatabaseconnection</em>'.
+	 * @see org.modmacao.toscaspecifictypes.Mysqldatabaseconnection
+	 * @generated
+	 */
+	EClass getMysqldatabaseconnection();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -650,6 +781,26 @@ public interface ToscaspecifictypesPackage extends EPackage {
 		 * @generated
 		 */
 		EClass MYSQLDATABASE = eINSTANCE.getMysqldatabase();
+
+		/**
+		 * The meta object literal for the '{@link org.modmacao.toscaspecifictypes.impl.MysqldatabasehostedonmysqlImpl <em>Mysqldatabasehostedonmysql</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.modmacao.toscaspecifictypes.impl.MysqldatabasehostedonmysqlImpl
+		 * @see org.modmacao.toscaspecifictypes.impl.ToscaspecifictypesPackageImpl#getMysqldatabasehostedonmysql()
+		 * @generated
+		 */
+		EClass MYSQLDATABASEHOSTEDONMYSQL = eINSTANCE.getMysqldatabasehostedonmysql();
+
+		/**
+		 * The meta object literal for the '{@link org.modmacao.toscaspecifictypes.impl.MysqldatabaseconnectionImpl <em>Mysqldatabaseconnection</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.modmacao.toscaspecifictypes.impl.MysqldatabaseconnectionImpl
+		 * @see org.modmacao.toscaspecifictypes.impl.ToscaspecifictypesPackageImpl#getMysqldatabaseconnection()
+		 * @generated
+		 */
+		EClass MYSQLDATABASECONNECTION = eINSTANCE.getMysqldatabaseconnection();
 
 	}
 

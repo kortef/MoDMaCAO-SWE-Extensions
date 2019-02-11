@@ -14,6 +14,7 @@ package org.modmacao.toscaspecifictypes.util;
 
 import modmacao.Component;
 
+import modmacao.Dependency;
 import org.eclipse.cmf.occi.core.MixinBase;
 
 import org.eclipse.emf.ecore.EObject;
@@ -128,6 +129,22 @@ public class ToscaspecifictypesSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ToscaspecifictypesPackage.MYSQLDATABASEHOSTEDONMYSQL: {
+				Mysqldatabasehostedonmysql mysqldatabasehostedonmysql = (Mysqldatabasehostedonmysql)theEObject;
+				T result = caseMysqldatabasehostedonmysql(mysqldatabasehostedonmysql);
+				if (result == null) result = caseDependency(mysqldatabasehostedonmysql);
+				if (result == null) result = caseMixinBase(mysqldatabasehostedonmysql);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ToscaspecifictypesPackage.MYSQLDATABASECONNECTION: {
+				Mysqldatabaseconnection mysqldatabaseconnection = (Mysqldatabaseconnection)theEObject;
+				T result = caseMysqldatabaseconnection(mysqldatabaseconnection);
+				if (result == null) result = caseDependency(mysqldatabaseconnection);
+				if (result == null) result = caseMixinBase(mysqldatabaseconnection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -223,6 +240,36 @@ public class ToscaspecifictypesSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mysqldatabasehostedonmysql</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mysqldatabasehostedonmysql</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMysqldatabasehostedonmysql(Mysqldatabasehostedonmysql object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mysqldatabaseconnection</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mysqldatabaseconnection</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMysqldatabaseconnection(Mysqldatabaseconnection object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Mixin Base</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -249,6 +296,21 @@ public class ToscaspecifictypesSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseComponent(Component object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Dependency</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Dependency</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDependency(Dependency object) {
 		return null;
 	}
 

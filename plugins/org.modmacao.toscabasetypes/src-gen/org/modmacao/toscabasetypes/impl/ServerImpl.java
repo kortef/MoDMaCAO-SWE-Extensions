@@ -31,33 +31,13 @@ import org.modmacao.toscabasetypes.ToscabasetypesPackage;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.modmacao.toscabasetypes.impl.ServerImpl#getNumCpus <em>Num Cpus</em>}</li>
  *   <li>{@link org.modmacao.toscabasetypes.impl.ServerImpl#getMemory <em>Memory</em>}</li>
+ *   <li>{@link org.modmacao.toscabasetypes.impl.ServerImpl#getNumCpus <em>Num Cpus</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class ServerImpl extends ComponentImpl implements Server {
-	/**
-	 * The default value of the '{@link #getNumCpus() <em>Num Cpus</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getNumCpus()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int NUM_CPUS_EDEFAULT = 1;
-
-	/**
-	 * The cached value of the '{@link #getNumCpus() <em>Num Cpus</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getNumCpus()
-	 * @generated
-	 * @ordered
-	 */
-	protected int numCpus = NUM_CPUS_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getMemory() <em>Memory</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -77,6 +57,26 @@ public class ServerImpl extends ComponentImpl implements Server {
 	 * @ordered
 	 */
 	protected int memory = MEMORY_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getNumCpus() <em>Num Cpus</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNumCpus()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int NUM_CPUS_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getNumCpus() <em>Num Cpus</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNumCpus()
+	 * @generated
+	 * @ordered
+	 */
+	protected int numCpus = NUM_CPUS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,10 +147,10 @@ public class ServerImpl extends ComponentImpl implements Server {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ToscabasetypesPackage.SERVER__NUM_CPUS:
-				return getNumCpus();
 			case ToscabasetypesPackage.SERVER__MEMORY:
 				return getMemory();
+			case ToscabasetypesPackage.SERVER__NUM_CPUS:
+				return getNumCpus();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -163,11 +163,11 @@ public class ServerImpl extends ComponentImpl implements Server {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ToscabasetypesPackage.SERVER__NUM_CPUS:
-				setNumCpus((Integer)newValue);
-				return;
 			case ToscabasetypesPackage.SERVER__MEMORY:
 				setMemory((Integer)newValue);
+				return;
+			case ToscabasetypesPackage.SERVER__NUM_CPUS:
+				setNumCpus((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -181,11 +181,11 @@ public class ServerImpl extends ComponentImpl implements Server {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ToscabasetypesPackage.SERVER__NUM_CPUS:
-				setNumCpus(NUM_CPUS_EDEFAULT);
-				return;
 			case ToscabasetypesPackage.SERVER__MEMORY:
 				setMemory(MEMORY_EDEFAULT);
+				return;
+			case ToscabasetypesPackage.SERVER__NUM_CPUS:
+				setNumCpus(NUM_CPUS_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -199,10 +199,10 @@ public class ServerImpl extends ComponentImpl implements Server {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ToscabasetypesPackage.SERVER__NUM_CPUS:
-				return numCpus != NUM_CPUS_EDEFAULT;
 			case ToscabasetypesPackage.SERVER__MEMORY:
 				return memory != MEMORY_EDEFAULT;
+			case ToscabasetypesPackage.SERVER__NUM_CPUS:
+				return numCpus != NUM_CPUS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -217,10 +217,10 @@ public class ServerImpl extends ComponentImpl implements Server {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (numCpus: ");
-		result.append(numCpus);
-		result.append(", memory: ");
+		result.append(" (memory: ");
 		result.append(memory);
+		result.append(", numCpus: ");
+		result.append(numCpus);
 		result.append(')');
 		return result.toString();
 	}

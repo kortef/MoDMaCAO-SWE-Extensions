@@ -33,4 +33,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Mysqldatabase" eSuperTypes="platform:/plugin/org.modmacao.core/model/modmacao.ecore#//Component platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Mysqldatabasehostedonmysql" eSuperTypes="platform:/plugin/org.modmacao.core/model/modmacao.ecore#//Dependency platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Mysqldatabaseconnection" eSuperTypes="platform:/plugin/org.modmacao.core/model/modmacao.ecore#//Dependency platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase"/>
 </ecore:EPackage>

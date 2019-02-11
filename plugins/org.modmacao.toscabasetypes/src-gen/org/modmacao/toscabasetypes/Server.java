@@ -25,8 +25,8 @@ import org.eclipse.cmf.occi.core.MixinBase;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.modmacao.toscabasetypes.Server#getNumCpus <em>Num Cpus</em>}</li>
  *   <li>{@link org.modmacao.toscabasetypes.Server#getMemory <em>Memory</em>}</li>
+ *   <li>{@link org.modmacao.toscabasetypes.Server#getNumCpus <em>Num Cpus</em>}</li>
  * </ul>
  *
  * @see org.modmacao.toscabasetypes.ToscabasetypesPackage#getServer()
@@ -36,7 +36,6 @@ import org.eclipse.cmf.occi.core.MixinBase;
 public interface Server extends Component, MixinBase {
 	/**
 	 * Returns the value of the '<em><b>Num Cpus</b></em>' attribute.
-	 * The default value is <code>"1"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -45,8 +44,7 @@ public interface Server extends Component, MixinBase {
 	 * @return the value of the '<em>Num Cpus</em>' attribute.
 	 * @see #setNumCpus(int)
 	 * @see org.modmacao.toscabasetypes.ToscabasetypesPackage#getServer_NumCpus()
-	 * @model default="1"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://schemas.modmacao.org/toscabasetypes/ecore!Server!numCpus'"
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://schemas.modmacao.org/toscabasetypes/ecore!Server!numCpus'"
 	 * @generated
 	 */
 	int getNumCpus();

@@ -86,6 +86,24 @@ public interface ToscaspecifictypesFactory extends EFactory {
 	Mysqldatabase createMysqldatabase();
 
 	/**
+	 * Returns a new object of class '<em>Mysqldatabasehostedonmysql</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mysqldatabasehostedonmysql</em>'.
+	 * @generated
+	 */
+	Mysqldatabasehostedonmysql createMysqldatabasehostedonmysql();
+
+	/**
+	 * Returns a new object of class '<em>Mysqldatabaseconnection</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mysqldatabaseconnection</em>'.
+	 * @generated
+	 */
+	Mysqldatabaseconnection createMysqldatabaseconnection();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

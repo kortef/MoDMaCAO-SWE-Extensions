@@ -14,6 +14,7 @@ package org.modmacao.toscabasetypes.util;
 
 import modmacao.Component;
 
+import modmacao.Dependency;
 import org.eclipse.cmf.occi.core.MixinBase;
 
 import org.eclipse.emf.ecore.EObject;
@@ -157,6 +158,38 @@ public class ToscabasetypesSwitch<T> extends Switch<T> {
 				T result = caseDatabase(database);
 				if (result == null) result = caseComponent(database);
 				if (result == null) result = caseMixinBase(database);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ToscabasetypesPackage.ROOTRELATIONSHIPTYPE: {
+				Rootrelationshiptype rootrelationshiptype = (Rootrelationshiptype)theEObject;
+				T result = caseRootrelationshiptype(rootrelationshiptype);
+				if (result == null) result = caseDependency(rootrelationshiptype);
+				if (result == null) result = caseMixinBase(rootrelationshiptype);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ToscabasetypesPackage.HOSTEDON: {
+				Hostedon hostedon = (Hostedon)theEObject;
+				T result = caseHostedon(hostedon);
+				if (result == null) result = caseDependency(hostedon);
+				if (result == null) result = caseMixinBase(hostedon);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ToscabasetypesPackage.DEPENDSON: {
+				Dependson dependson = (Dependson)theEObject;
+				T result = caseDependson(dependson);
+				if (result == null) result = caseDependency(dependson);
+				if (result == null) result = caseMixinBase(dependson);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ToscabasetypesPackage.CONNECTSTO: {
+				Connectsto connectsto = (Connectsto)theEObject;
+				T result = caseConnectsto(connectsto);
+				if (result == null) result = caseDependency(connectsto);
+				if (result == null) result = caseMixinBase(connectsto);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -315,6 +348,66 @@ public class ToscabasetypesSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rootrelationshiptype</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rootrelationshiptype</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRootrelationshiptype(Rootrelationshiptype object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hostedon</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hostedon</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHostedon(Hostedon object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Dependson</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Dependson</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDependson(Dependson object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Connectsto</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Connectsto</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConnectsto(Connectsto object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Mixin Base</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -341,6 +434,21 @@ public class ToscabasetypesSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseComponent(Component object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Dependency</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Dependency</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDependency(Dependency object) {
 		return null;
 	}
 

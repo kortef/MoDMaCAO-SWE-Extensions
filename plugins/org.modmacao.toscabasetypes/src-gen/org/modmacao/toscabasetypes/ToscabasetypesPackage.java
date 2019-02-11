@@ -370,22 +370,22 @@ public interface ToscabasetypesPackage extends EPackage {
 	int SERVER__MODMACAO_COMPONENT_VERSION = ModmacaoPackage.COMPONENT__MODMACAO_COMPONENT_VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Num Cpus</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SERVER__NUM_CPUS = ModmacaoPackage.COMPONENT_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Memory</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER__MEMORY = ModmacaoPackage.COMPONENT_FEATURE_COUNT + 1;
+	int SERVER__MEMORY = ModmacaoPackage.COMPONENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Num Cpus</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVER__NUM_CPUS = ModmacaoPackage.COMPONENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Server</em>' class.
@@ -727,6 +727,227 @@ public interface ToscabasetypesPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.modmacao.toscabasetypes.impl.RootrelationshiptypeImpl <em>Rootrelationshiptype</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.modmacao.toscabasetypes.impl.RootrelationshiptypeImpl
+	 * @see org.modmacao.toscabasetypes.impl.ToscabasetypesPackageImpl#getRootrelationshiptype()
+	 * @generated
+	 */
+	int ROOTRELATIONSHIPTYPE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOTRELATIONSHIPTYPE__MIXIN = ModmacaoPackage.DEPENDENCY__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOTRELATIONSHIPTYPE__ENTITY = ModmacaoPackage.DEPENDENCY__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOTRELATIONSHIPTYPE__ATTRIBUTES = ModmacaoPackage.DEPENDENCY__ATTRIBUTES;
+
+	/**
+	 * The number of structural features of the '<em>Rootrelationshiptype</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOTRELATIONSHIPTYPE_FEATURE_COUNT = ModmacaoPackage.DEPENDENCY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Rootrelationshiptype</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOTRELATIONSHIPTYPE_OPERATION_COUNT = ModmacaoPackage.DEPENDENCY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.modmacao.toscabasetypes.impl.HostedonImpl <em>Hostedon</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.modmacao.toscabasetypes.impl.HostedonImpl
+	 * @see org.modmacao.toscabasetypes.impl.ToscabasetypesPackageImpl#getHostedon()
+	 * @generated
+	 */
+	int HOSTEDON = 11;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSTEDON__MIXIN = ModmacaoPackage.DEPENDENCY__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSTEDON__ENTITY = ModmacaoPackage.DEPENDENCY__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSTEDON__ATTRIBUTES = ModmacaoPackage.DEPENDENCY__ATTRIBUTES;
+
+	/**
+	 * The number of structural features of the '<em>Hostedon</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSTEDON_FEATURE_COUNT = ModmacaoPackage.DEPENDENCY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Hostedon</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSTEDON_OPERATION_COUNT = ModmacaoPackage.DEPENDENCY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.modmacao.toscabasetypes.impl.DependsonImpl <em>Dependson</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.modmacao.toscabasetypes.impl.DependsonImpl
+	 * @see org.modmacao.toscabasetypes.impl.ToscabasetypesPackageImpl#getDependson()
+	 * @generated
+	 */
+	int DEPENDSON = 12;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEPENDSON__MIXIN = ModmacaoPackage.DEPENDENCY__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEPENDSON__ENTITY = ModmacaoPackage.DEPENDENCY__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEPENDSON__ATTRIBUTES = ModmacaoPackage.DEPENDENCY__ATTRIBUTES;
+
+	/**
+	 * The number of structural features of the '<em>Dependson</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEPENDSON_FEATURE_COUNT = ModmacaoPackage.DEPENDENCY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Dependson</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEPENDSON_OPERATION_COUNT = ModmacaoPackage.DEPENDENCY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.modmacao.toscabasetypes.impl.ConnectstoImpl <em>Connectsto</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.modmacao.toscabasetypes.impl.ConnectstoImpl
+	 * @see org.modmacao.toscabasetypes.impl.ToscabasetypesPackageImpl#getConnectsto()
+	 * @generated
+	 */
+	int CONNECTSTO = 13;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTSTO__MIXIN = ModmacaoPackage.DEPENDENCY__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTSTO__ENTITY = ModmacaoPackage.DEPENDENCY__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTSTO__ATTRIBUTES = ModmacaoPackage.DEPENDENCY__ATTRIBUTES;
+
+	/**
+	 * The number of structural features of the '<em>Connectsto</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTSTO_FEATURE_COUNT = ModmacaoPackage.DEPENDENCY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Connectsto</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTSTO_OPERATION_COUNT = ModmacaoPackage.DEPENDENCY_OPERATION_COUNT + 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link org.modmacao.toscabasetypes.Rootnodetype <em>Rootnodetype</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -847,6 +1068,46 @@ public interface ToscabasetypesPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getDatabase();
+
+	/**
+	 * Returns the meta object for class '{@link org.modmacao.toscabasetypes.Rootrelationshiptype <em>Rootrelationshiptype</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Rootrelationshiptype</em>'.
+	 * @see org.modmacao.toscabasetypes.Rootrelationshiptype
+	 * @generated
+	 */
+	EClass getRootrelationshiptype();
+
+	/**
+	 * Returns the meta object for class '{@link org.modmacao.toscabasetypes.Hostedon <em>Hostedon</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Hostedon</em>'.
+	 * @see org.modmacao.toscabasetypes.Hostedon
+	 * @generated
+	 */
+	EClass getHostedon();
+
+	/**
+	 * Returns the meta object for class '{@link org.modmacao.toscabasetypes.Dependson <em>Dependson</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Dependson</em>'.
+	 * @see org.modmacao.toscabasetypes.Dependson
+	 * @generated
+	 */
+	EClass getDependson();
+
+	/**
+	 * Returns the meta object for class '{@link org.modmacao.toscabasetypes.Connectsto <em>Connectsto</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Connectsto</em>'.
+	 * @see org.modmacao.toscabasetypes.Connectsto
+	 * @generated
+	 */
+	EClass getConnectsto();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -986,6 +1247,46 @@ public interface ToscabasetypesPackage extends EPackage {
 		 * @generated
 		 */
 		EClass DATABASE = eINSTANCE.getDatabase();
+
+		/**
+		 * The meta object literal for the '{@link org.modmacao.toscabasetypes.impl.RootrelationshiptypeImpl <em>Rootrelationshiptype</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.modmacao.toscabasetypes.impl.RootrelationshiptypeImpl
+		 * @see org.modmacao.toscabasetypes.impl.ToscabasetypesPackageImpl#getRootrelationshiptype()
+		 * @generated
+		 */
+		EClass ROOTRELATIONSHIPTYPE = eINSTANCE.getRootrelationshiptype();
+
+		/**
+		 * The meta object literal for the '{@link org.modmacao.toscabasetypes.impl.HostedonImpl <em>Hostedon</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.modmacao.toscabasetypes.impl.HostedonImpl
+		 * @see org.modmacao.toscabasetypes.impl.ToscabasetypesPackageImpl#getHostedon()
+		 * @generated
+		 */
+		EClass HOSTEDON = eINSTANCE.getHostedon();
+
+		/**
+		 * The meta object literal for the '{@link org.modmacao.toscabasetypes.impl.DependsonImpl <em>Dependson</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.modmacao.toscabasetypes.impl.DependsonImpl
+		 * @see org.modmacao.toscabasetypes.impl.ToscabasetypesPackageImpl#getDependson()
+		 * @generated
+		 */
+		EClass DEPENDSON = eINSTANCE.getDependson();
+
+		/**
+		 * The meta object literal for the '{@link org.modmacao.toscabasetypes.impl.ConnectstoImpl <em>Connectsto</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.modmacao.toscabasetypes.impl.ConnectstoImpl
+		 * @see org.modmacao.toscabasetypes.impl.ToscabasetypesPackageImpl#getConnectsto()
+		 * @generated
+		 */
+		EClass CONNECTSTO = eINSTANCE.getConnectsto();
 
 	}
 

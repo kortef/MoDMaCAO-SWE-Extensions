@@ -95,6 +95,8 @@ public class ToscaspecifictypesTables
 		public static final /*@NonNull*/ EcoreExecutorType _Apachewebserver = new EcoreExecutorType(ToscaspecifictypesPackage.Literals.APACHEWEBSERVER, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Mysql = new EcoreExecutorType(ToscaspecifictypesPackage.Literals.MYSQL, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Mysqldatabase = new EcoreExecutorType(ToscaspecifictypesPackage.Literals.MYSQLDATABASE, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Mysqldatabaseconnection = new EcoreExecutorType(ToscaspecifictypesPackage.Literals.MYSQLDATABASECONNECTION, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Mysqldatabasehostedonmysql = new EcoreExecutorType(ToscaspecifictypesPackage.Literals.MYSQLDATABASEHOSTEDONMYSQL, PACKAGE, 0);
 
 		private static final /*@NonNull*/ EcoreExecutorType /*@NonNull*/ [] types = {
 			_Apachemodule,
@@ -102,7 +104,9 @@ public class ToscaspecifictypesTables
 			_Apachewebapplication,
 			_Apachewebserver,
 			_Mysql,
-			_Mysqldatabase
+			_Mysqldatabase,
+			_Mysqldatabaseconnection,
+			_Mysqldatabasehostedonmysql
 		};
 
 		/*
@@ -163,6 +167,18 @@ public class ToscaspecifictypesTables
 		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabase__Mysqldatabase = new ExecutorFragment(Types._Mysqldatabase, ToscaspecifictypesTables.Types._Mysqldatabase);
 		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabase__OclAny = new ExecutorFragment(Types._Mysqldatabase, OCLstdlibTables.Types._OclAny);
 		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabase__OclElement = new ExecutorFragment(Types._Mysqldatabase, OCLstdlibTables.Types._OclElement);
+
+		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabaseconnection__Dependency = new ExecutorFragment(Types._Mysqldatabaseconnection, ModmacaoTables.Types._Dependency);
+		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabaseconnection__MixinBase = new ExecutorFragment(Types._Mysqldatabaseconnection, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabaseconnection__Mysqldatabaseconnection = new ExecutorFragment(Types._Mysqldatabaseconnection, ToscaspecifictypesTables.Types._Mysqldatabaseconnection);
+		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabaseconnection__OclAny = new ExecutorFragment(Types._Mysqldatabaseconnection, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabaseconnection__OclElement = new ExecutorFragment(Types._Mysqldatabaseconnection, OCLstdlibTables.Types._OclElement);
+
+		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabasehostedonmysql__Dependency = new ExecutorFragment(Types._Mysqldatabasehostedonmysql, ModmacaoTables.Types._Dependency);
+		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabasehostedonmysql__MixinBase = new ExecutorFragment(Types._Mysqldatabasehostedonmysql, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabasehostedonmysql__Mysqldatabasehostedonmysql = new ExecutorFragment(Types._Mysqldatabasehostedonmysql, ToscaspecifictypesTables.Types._Mysqldatabasehostedonmysql);
+		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabasehostedonmysql__OclAny = new ExecutorFragment(Types._Mysqldatabasehostedonmysql, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Mysqldatabasehostedonmysql__OclElement = new ExecutorFragment(Types._Mysqldatabasehostedonmysql, OCLstdlibTables.Types._OclElement);
 
 		static {
 			Init.initEnd();
@@ -317,6 +333,26 @@ public class ToscaspecifictypesTables
 			};
 		private static final int /*@NonNull*/ [] __Mysqldatabase = { 1,1,1,1,1 };
 
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Mysqldatabaseconnection =
+			{
+				Fragments._Mysqldatabaseconnection__OclAny /* 0 */,
+				Fragments._Mysqldatabaseconnection__OclElement /* 1 */,
+				Fragments._Mysqldatabaseconnection__MixinBase /* 2 */,
+				Fragments._Mysqldatabaseconnection__Dependency /* 3 */,
+				Fragments._Mysqldatabaseconnection__Mysqldatabaseconnection /* 4 */
+			};
+		private static final int /*@NonNull*/ [] __Mysqldatabaseconnection = { 1,1,1,1,1 };
+
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Mysqldatabasehostedonmysql =
+			{
+				Fragments._Mysqldatabasehostedonmysql__OclAny /* 0 */,
+				Fragments._Mysqldatabasehostedonmysql__OclElement /* 1 */,
+				Fragments._Mysqldatabasehostedonmysql__MixinBase /* 2 */,
+				Fragments._Mysqldatabasehostedonmysql__Dependency /* 3 */,
+				Fragments._Mysqldatabasehostedonmysql__Mysqldatabasehostedonmysql /* 4 */
+			};
+		private static final int /*@NonNull*/ [] __Mysqldatabasehostedonmysql = { 1,1,1,1,1 };
+
 		/**
 		 *	Install the fragment descriptors in the class descriptors.
 		 */
@@ -327,6 +363,8 @@ public class ToscaspecifictypesTables
 			Types._Apachewebserver.initFragments(_Apachewebserver, __Apachewebserver);
 			Types._Mysql.initFragments(_Mysql, __Mysql);
 			Types._Mysqldatabase.initFragments(_Mysqldatabase, __Mysqldatabase);
+			Types._Mysqldatabaseconnection.initFragments(_Mysqldatabaseconnection, __Mysqldatabaseconnection);
+			Types._Mysqldatabasehostedonmysql.initFragments(_Mysqldatabasehostedonmysql, __Mysqldatabasehostedonmysql);
 
 			Init.initEnd();
 		}
@@ -526,6 +564,66 @@ public class ToscaspecifictypesTables
 			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
 		};
 
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Mysqldatabaseconnection__Mysqldatabaseconnection = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Mysqldatabaseconnection__Dependency = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Mysqldatabaseconnection__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Mysqldatabaseconnection__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Mysqldatabaseconnection__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
+
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Mysqldatabasehostedonmysql__Mysqldatabasehostedonmysql = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Mysqldatabasehostedonmysql__Dependency = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Mysqldatabasehostedonmysql__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Mysqldatabasehostedonmysql__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Mysqldatabasehostedonmysql__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
+
 		/*
 		 *	Install the operation descriptors in the fragment descriptors.
 		 */
@@ -566,6 +664,18 @@ public class ToscaspecifictypesTables
 			Fragments._Mysqldatabase__OclAny.initOperations(_Mysqldatabase__OclAny);
 			Fragments._Mysqldatabase__OclElement.initOperations(_Mysqldatabase__OclElement);
 
+			Fragments._Mysqldatabaseconnection__Dependency.initOperations(_Mysqldatabaseconnection__Dependency);
+			Fragments._Mysqldatabaseconnection__MixinBase.initOperations(_Mysqldatabaseconnection__MixinBase);
+			Fragments._Mysqldatabaseconnection__Mysqldatabaseconnection.initOperations(_Mysqldatabaseconnection__Mysqldatabaseconnection);
+			Fragments._Mysqldatabaseconnection__OclAny.initOperations(_Mysqldatabaseconnection__OclAny);
+			Fragments._Mysqldatabaseconnection__OclElement.initOperations(_Mysqldatabaseconnection__OclElement);
+
+			Fragments._Mysqldatabasehostedonmysql__Dependency.initOperations(_Mysqldatabasehostedonmysql__Dependency);
+			Fragments._Mysqldatabasehostedonmysql__MixinBase.initOperations(_Mysqldatabasehostedonmysql__MixinBase);
+			Fragments._Mysqldatabasehostedonmysql__Mysqldatabasehostedonmysql.initOperations(_Mysqldatabasehostedonmysql__Mysqldatabasehostedonmysql);
+			Fragments._Mysqldatabasehostedonmysql__OclAny.initOperations(_Mysqldatabasehostedonmysql__OclAny);
+			Fragments._Mysqldatabasehostedonmysql__OclElement.initOperations(_Mysqldatabasehostedonmysql__OclElement);
+
 			Init.initEnd();
 		}
 
@@ -600,6 +710,10 @@ public class ToscaspecifictypesTables
 
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Mysqldatabase = {};
 
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Mysqldatabaseconnection = {};
+
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Mysqldatabasehostedonmysql = {};
+
 		/**
 		 *	Install the property descriptors in the fragment descriptors.
 		 */
@@ -610,6 +724,8 @@ public class ToscaspecifictypesTables
 			Fragments._Apachewebserver__Apachewebserver.initProperties(_Apachewebserver);
 			Fragments._Mysql__Mysql.initProperties(_Mysql);
 			Fragments._Mysqldatabase__Mysqldatabase.initProperties(_Mysqldatabase);
+			Fragments._Mysqldatabaseconnection__Mysqldatabaseconnection.initProperties(_Mysqldatabaseconnection);
+			Fragments._Mysqldatabasehostedonmysql__Mysqldatabasehostedonmysql.initProperties(_Mysqldatabasehostedonmysql);
 
 			Init.initEnd();
 		}

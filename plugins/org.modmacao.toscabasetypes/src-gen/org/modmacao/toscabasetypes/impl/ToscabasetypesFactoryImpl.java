@@ -76,6 +76,10 @@ public class ToscabasetypesFactoryImpl extends EFactoryImpl implements Toscabase
 			case ToscabasetypesPackage.WEBAPPLICATION: return createWebapplication();
 			case ToscabasetypesPackage.DBMS: return createDbms();
 			case ToscabasetypesPackage.DATABASE: return createDatabase();
+			case ToscabasetypesPackage.ROOTRELATIONSHIPTYPE: return createRootrelationshiptype();
+			case ToscabasetypesPackage.HOSTEDON: return createHostedon();
+			case ToscabasetypesPackage.DEPENDSON: return createDependson();
+			case ToscabasetypesPackage.CONNECTSTO: return createConnectsto();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -179,6 +183,46 @@ public class ToscabasetypesFactoryImpl extends EFactoryImpl implements Toscabase
 	public Database createDatabase() {
 		DatabaseImpl database = new DatabaseImpl();
 		return database;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Rootrelationshiptype createRootrelationshiptype() {
+		RootrelationshiptypeImpl rootrelationshiptype = new RootrelationshiptypeImpl();
+		return rootrelationshiptype;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Hostedon createHostedon() {
+		HostedonImpl hostedon = new HostedonImpl();
+		return hostedon;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Dependson createDependson() {
+		DependsonImpl dependson = new DependsonImpl();
+		return dependson;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Connectsto createConnectsto() {
+		ConnectstoImpl connectsto = new ConnectstoImpl();
+		return connectsto;
 	}
 
 	/**

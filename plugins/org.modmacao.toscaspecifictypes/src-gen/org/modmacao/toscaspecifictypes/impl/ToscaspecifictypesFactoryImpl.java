@@ -72,6 +72,8 @@ public class ToscaspecifictypesFactoryImpl extends EFactoryImpl implements Tosca
 			case ToscaspecifictypesPackage.APACHEPHPMODULE: return createApachephpmodule();
 			case ToscaspecifictypesPackage.MYSQL: return createMysql();
 			case ToscaspecifictypesPackage.MYSQLDATABASE: return createMysqldatabase();
+			case ToscaspecifictypesPackage.MYSQLDATABASEHOSTEDONMYSQL: return createMysqldatabasehostedonmysql();
+			case ToscaspecifictypesPackage.MYSQLDATABASECONNECTION: return createMysqldatabaseconnection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -135,6 +137,26 @@ public class ToscaspecifictypesFactoryImpl extends EFactoryImpl implements Tosca
 	public Mysqldatabase createMysqldatabase() {
 		MysqldatabaseImpl mysqldatabase = new MysqldatabaseImpl();
 		return mysqldatabase;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Mysqldatabasehostedonmysql createMysqldatabasehostedonmysql() {
+		MysqldatabasehostedonmysqlImpl mysqldatabasehostedonmysql = new MysqldatabasehostedonmysqlImpl();
+		return mysqldatabasehostedonmysql;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Mysqldatabaseconnection createMysqldatabaseconnection() {
+		MysqldatabaseconnectionImpl mysqldatabaseconnection = new MysqldatabaseconnectionImpl();
+		return mysqldatabaseconnection;
 	}
 
 	/**

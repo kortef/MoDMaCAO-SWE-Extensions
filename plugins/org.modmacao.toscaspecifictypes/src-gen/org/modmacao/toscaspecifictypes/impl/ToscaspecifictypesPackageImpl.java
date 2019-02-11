@@ -34,6 +34,8 @@ import org.modmacao.toscaspecifictypes.Apachewebapplication;
 import org.modmacao.toscaspecifictypes.Apachewebserver;
 import org.modmacao.toscaspecifictypes.Mysql;
 import org.modmacao.toscaspecifictypes.Mysqldatabase;
+import org.modmacao.toscaspecifictypes.Mysqldatabaseconnection;
+import org.modmacao.toscaspecifictypes.Mysqldatabasehostedonmysql;
 import org.modmacao.toscaspecifictypes.ToscaspecifictypesFactory;
 import org.modmacao.toscaspecifictypes.ToscaspecifictypesPackage;
 
@@ -85,6 +87,20 @@ public class ToscaspecifictypesPackageImpl extends EPackageImpl implements Tosca
 	 * @generated
 	 */
 	private EClass mysqldatabaseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mysqldatabasehostedonmysqlEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mysqldatabaseconnectionEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -231,6 +247,24 @@ public class ToscaspecifictypesPackageImpl extends EPackageImpl implements Tosca
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getMysqldatabasehostedonmysql() {
+		return mysqldatabasehostedonmysqlEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMysqldatabaseconnection() {
+		return mysqldatabaseconnectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ToscaspecifictypesFactory getToscaspecifictypesFactory() {
 		return (ToscaspecifictypesFactory)getEFactoryInstance();
 	}
@@ -267,6 +301,10 @@ public class ToscaspecifictypesPackageImpl extends EPackageImpl implements Tosca
 		createEAttribute(mysqlEClass, MYSQL__ROOT_PASSWORD);
 
 		mysqldatabaseEClass = createEClass(MYSQLDATABASE);
+
+		mysqldatabasehostedonmysqlEClass = createEClass(MYSQLDATABASEHOSTEDONMYSQL);
+
+		mysqldatabaseconnectionEClass = createEClass(MYSQLDATABASECONNECTION);
 	}
 
 	/**
@@ -313,6 +351,10 @@ public class ToscaspecifictypesPackageImpl extends EPackageImpl implements Tosca
 		mysqlEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		mysqldatabaseEClass.getESuperTypes().add(theModmacaoPackage.getComponent());
 		mysqldatabaseEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		mysqldatabasehostedonmysqlEClass.getESuperTypes().add(theModmacaoPackage.getDependency());
+		mysqldatabasehostedonmysqlEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		mysqldatabaseconnectionEClass.getESuperTypes().add(theModmacaoPackage.getDependency());
+		mysqldatabaseconnectionEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(apachewebserverEClass, Apachewebserver.class, "Apachewebserver", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -328,6 +370,10 @@ public class ToscaspecifictypesPackageImpl extends EPackageImpl implements Tosca
 		initEAttribute(getMysql_RootPassword(), ecorePackage.getEString(), "rootPassword", null, 0, 1, Mysql.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(mysqldatabaseEClass, Mysqldatabase.class, "Mysqldatabase", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(mysqldatabasehostedonmysqlEClass, Mysqldatabasehostedonmysql.class, "Mysqldatabasehostedonmysql", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(mysqldatabaseconnectionEClass, Mysqldatabaseconnection.class, "Mysqldatabaseconnection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -122,6 +122,42 @@ public interface ToscabasetypesFactory extends EFactory {
 	Database createDatabase();
 
 	/**
+	 * Returns a new object of class '<em>Rootrelationshiptype</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Rootrelationshiptype</em>'.
+	 * @generated
+	 */
+	Rootrelationshiptype createRootrelationshiptype();
+
+	/**
+	 * Returns a new object of class '<em>Hostedon</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hostedon</em>'.
+	 * @generated
+	 */
+	Hostedon createHostedon();
+
+	/**
+	 * Returns a new object of class '<em>Dependson</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Dependson</em>'.
+	 * @generated
+	 */
+	Dependson createDependson();
+
+	/**
+	 * Returns a new object of class '<em>Connectsto</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Connectsto</em>'.
+	 * @generated
+	 */
+	Connectsto createConnectsto();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

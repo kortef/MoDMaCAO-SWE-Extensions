@@ -20,8 +20,8 @@
     </genClasses>
     <genClasses>
       <ecoreClass href="toscabasetypes.ecore#//Server"/>
-      <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="toscabasetypes.ecore#//Server/numCpus"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="toscabasetypes.ecore#//Server/numCpus"/>
       </genFeatures>
       <genFeatures createChild="false">
         <ecoreFeature xsi:type="ecore:EAttribute" href="toscabasetypes.ecore#//Server/memory"/>
@@ -41,6 +41,18 @@
     </genClasses>
     <genClasses>
       <ecoreClass href="toscabasetypes.ecore#//Database"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="toscabasetypes.ecore#//Rootrelationshiptype"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="toscabasetypes.ecore#//Hostedon"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="toscabasetypes.ecore#//Dependson"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="toscabasetypes.ecore#//Connectsto"/>
     </genClasses>
   </genPackages>
   <usedGenPackages href="platform:/plugin/org.modmacao.occi.platform/model/platform.genmodel#//platform"/>

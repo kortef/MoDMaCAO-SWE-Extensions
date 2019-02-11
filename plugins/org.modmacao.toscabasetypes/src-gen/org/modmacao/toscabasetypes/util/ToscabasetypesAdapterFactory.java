@@ -14,6 +14,7 @@ package org.modmacao.toscabasetypes.util;
 
 import modmacao.Component;
 
+import modmacao.Dependency;
 import org.eclipse.cmf.occi.core.MixinBase;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -122,12 +123,32 @@ public class ToscabasetypesAdapterFactory extends AdapterFactoryImpl {
 				return createDatabaseAdapter();
 			}
 			@Override
+			public Adapter caseRootrelationshiptype(Rootrelationshiptype object) {
+				return createRootrelationshiptypeAdapter();
+			}
+			@Override
+			public Adapter caseHostedon(Hostedon object) {
+				return createHostedonAdapter();
+			}
+			@Override
+			public Adapter caseDependson(Dependson object) {
+				return createDependsonAdapter();
+			}
+			@Override
+			public Adapter caseConnectsto(Connectsto object) {
+				return createConnectstoAdapter();
+			}
+			@Override
 			public Adapter caseMixinBase(MixinBase object) {
 				return createMixinBaseAdapter();
 			}
 			@Override
 			public Adapter caseComponent(Component object) {
 				return createComponentAdapter();
+			}
+			@Override
+			public Adapter caseDependency(Dependency object) {
+				return createDependencyAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -290,6 +311,62 @@ public class ToscabasetypesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.modmacao.toscabasetypes.Rootrelationshiptype <em>Rootrelationshiptype</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.modmacao.toscabasetypes.Rootrelationshiptype
+	 * @generated
+	 */
+	public Adapter createRootrelationshiptypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.modmacao.toscabasetypes.Hostedon <em>Hostedon</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.modmacao.toscabasetypes.Hostedon
+	 * @generated
+	 */
+	public Adapter createHostedonAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.modmacao.toscabasetypes.Dependson <em>Dependson</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.modmacao.toscabasetypes.Dependson
+	 * @generated
+	 */
+	public Adapter createDependsonAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.modmacao.toscabasetypes.Connectsto <em>Connectsto</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.modmacao.toscabasetypes.Connectsto
+	 * @generated
+	 */
+	public Adapter createConnectstoAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.cmf.occi.core.MixinBase <em>Mixin Base</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -314,6 +391,20 @@ public class ToscabasetypesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createComponentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link modmacao.Dependency <em>Dependency</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see modmacao.Dependency
+	 * @generated
+	 */
+	public Adapter createDependencyAdapter() {
 		return null;
 	}
 

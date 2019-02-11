@@ -26,10 +26,14 @@ import org.modmacao.occi.platform.PlatformPackage;
 
 import org.modmacao.placement.PlacementPackage;
 
+import org.modmacao.toscabasetypes.Connectsto;
 import org.modmacao.toscabasetypes.Database;
 import org.modmacao.toscabasetypes.Dbms;
+import org.modmacao.toscabasetypes.Dependson;
+import org.modmacao.toscabasetypes.Hostedon;
 import org.modmacao.toscabasetypes.Operatingsystem;
 import org.modmacao.toscabasetypes.Rootnodetype;
+import org.modmacao.toscabasetypes.Rootrelationshiptype;
 import org.modmacao.toscabasetypes.Scalabletier;
 import org.modmacao.toscabasetypes.Server;
 import org.modmacao.toscabasetypes.Singlenodetier;
@@ -115,6 +119,34 @@ public class ToscabasetypesPackageImpl extends EPackageImpl implements Toscabase
 	 * @generated
 	 */
 	private EClass databaseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass rootrelationshiptypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass hostedonEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dependsonEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass connectstoEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -234,7 +266,7 @@ public class ToscabasetypesPackageImpl extends EPackageImpl implements Toscabase
 	 * @generated
 	 */
 	public EAttribute getServer_NumCpus() {
-		return (EAttribute)serverEClass.getEStructuralFeatures().get(0);
+		return (EAttribute)serverEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -243,7 +275,7 @@ public class ToscabasetypesPackageImpl extends EPackageImpl implements Toscabase
 	 * @generated
 	 */
 	public EAttribute getServer_Memory() {
-		return (EAttribute)serverEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)serverEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -296,6 +328,42 @@ public class ToscabasetypesPackageImpl extends EPackageImpl implements Toscabase
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getRootrelationshiptype() {
+		return rootrelationshiptypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHostedon() {
+		return hostedonEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDependson() {
+		return dependsonEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getConnectsto() {
+		return connectstoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ToscabasetypesFactory getToscabasetypesFactory() {
 		return (ToscabasetypesFactory)getEFactoryInstance();
 	}
@@ -328,8 +396,8 @@ public class ToscabasetypesPackageImpl extends EPackageImpl implements Toscabase
 		scalabletierEClass = createEClass(SCALABLETIER);
 
 		serverEClass = createEClass(SERVER);
-		createEAttribute(serverEClass, SERVER__NUM_CPUS);
 		createEAttribute(serverEClass, SERVER__MEMORY);
+		createEAttribute(serverEClass, SERVER__NUM_CPUS);
 
 		operatingsystemEClass = createEClass(OPERATINGSYSTEM);
 
@@ -340,6 +408,14 @@ public class ToscabasetypesPackageImpl extends EPackageImpl implements Toscabase
 		dbmsEClass = createEClass(DBMS);
 
 		databaseEClass = createEClass(DATABASE);
+
+		rootrelationshiptypeEClass = createEClass(ROOTRELATIONSHIPTYPE);
+
+		hostedonEClass = createEClass(HOSTEDON);
+
+		dependsonEClass = createEClass(DEPENDSON);
+
+		connectstoEClass = createEClass(CONNECTSTO);
 	}
 
 	/**
@@ -394,6 +470,14 @@ public class ToscabasetypesPackageImpl extends EPackageImpl implements Toscabase
 		dbmsEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		databaseEClass.getESuperTypes().add(theModmacaoPackage.getComponent());
 		databaseEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		rootrelationshiptypeEClass.getESuperTypes().add(theModmacaoPackage.getDependency());
+		rootrelationshiptypeEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		hostedonEClass.getESuperTypes().add(theModmacaoPackage.getDependency());
+		hostedonEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		dependsonEClass.getESuperTypes().add(theModmacaoPackage.getDependency());
+		dependsonEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		connectstoEClass.getESuperTypes().add(theModmacaoPackage.getDependency());
+		connectstoEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(rootnodetypeEClass, Rootnodetype.class, "Rootnodetype", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -405,8 +489,8 @@ public class ToscabasetypesPackageImpl extends EPackageImpl implements Toscabase
 		initEClass(scalabletierEClass, Scalabletier.class, "Scalabletier", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(serverEClass, Server.class, "Server", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getServer_NumCpus(), ecorePackage.getEInt(), "numCpus", "1", 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getServer_Memory(), ecorePackage.getEInt(), "memory", null, 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getServer_NumCpus(), ecorePackage.getEInt(), "numCpus", null, 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(operatingsystemEClass, Operatingsystem.class, "Operatingsystem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -417,6 +501,14 @@ public class ToscabasetypesPackageImpl extends EPackageImpl implements Toscabase
 		initEClass(dbmsEClass, Dbms.class, "Dbms", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(databaseEClass, Database.class, "Database", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(rootrelationshiptypeEClass, Rootrelationshiptype.class, "Rootrelationshiptype", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(hostedonEClass, Hostedon.class, "Hostedon", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(dependsonEClass, Dependson.class, "Dependson", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(connectstoEClass, Connectsto.class, "Connectsto", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
