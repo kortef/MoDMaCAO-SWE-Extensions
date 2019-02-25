@@ -2,12 +2,12 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.modmacao.openstack.swe.runtime.edit;singleton:=true
+Automatic-Module-Name: org.modmacao.openstack.swe.runtime.edit
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Activator: ossweruntime.provider.OssweruntimeEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: ossweruntime.provider
 Require-Bundle: org.eclipse.core.runtime,
  org.modmacao.openstack.swe.runtime;visibility:=reexport,
@@ -23,5 +23,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.modmacao.placement;visibility:=reexport,
  org.modmacao.placement.edit;visibility:=reexport,
  org.eclipse.cmf.occi.core;visibility:=reexport,
- org.eclipse.cmf.occi.core.edit;visibility:=reexport
+ org.eclipse.cmf.occi.core.edit;visibility:=reexport,
+ org.eclipse.emf.common
 Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-10

@@ -2,6 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.modmacao.openstack.swe.runtime;singleton:=true
+Automatic-Module-Name: org.modmacao.openstack.swe.runtime
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
@@ -38,4 +39,5 @@ Require-Bundle: org.eclipse.core.runtime,
  org.modmacao.placement;visibility:=reexport,
  org.eclipse.cmf.occi.core;visibility:=reexport,
  org.eclipse.cmf.occi.core.ui,
- org.eclipse.cmf.occi.core.gen.emf.ui
+ org.eclipse.cmf.occi.core.gen.emf.ui,
+ org.eclipse.emf;bundle-version="2.7.0"
