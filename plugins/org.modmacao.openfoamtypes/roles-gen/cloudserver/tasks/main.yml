@@ -1,0 +1,30 @@
+- name: Deploy CloudServer
+  block:	
+   - debug: msg="Operation deploy not implemented."
+  when: task == "DEPLOY"
+  become_user: root
+  
+- name: Configure CloudServer  
+  block:
+  - debug: msg="Operation configure not implemented."
+  when: task == "CONFIGURE"
+  become_user: root
+  
+- name: Start CloudServer  
+  block:
+  - debug: msg="Operation start not implemented."
+  when: task == "START"
+  become_user: root
+  
+- name: Stop CloudServer
+  block:
+  - debug: msg="Operation stop not implemented."
+
+  when: task == "STOP"
+  become_user: root
+
+- name: Undeploy CloudServer
+  block:
+  - debug: msg="Operation undeploy not implemented."
+  when: task == "UNDEPLOY"
+  become_user: root

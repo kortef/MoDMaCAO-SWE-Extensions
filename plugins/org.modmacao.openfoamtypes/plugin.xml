@@ -16,12 +16,12 @@
 
    <!-- Register the openfoamtypes extension. -->
    <extension point="org.eclipse.cmf.occi.core.occie">
-      <occie scheme="http:://schemas.modmacao.org/openfoam#" file="model/openfoamtypes.occie"/>
+      <occie scheme="http://schemas.modmacao.org/openfoam#" file="model/openfoamtypes.occie"/>
    </extension>
 
    <!-- Define URI mapping. -->
    <extension point="org.eclipse.emf.ecore.uri_mapping">
-      <mapping source="http:://schemas.modmacao.org/openfoam" target="platform:/plugin/org.modmacao.openfoamtypes/model/openfoamtypes.occie"/>
+      <mapping source="http://schemas.modmacao.org/openfoam" target="platform:/plugin/org.modmacao.openfoamtypes/model/openfoamtypes.occie"/>
    </extension>
 
    <!-- Register the parser for .openfoamtypes files. -->
