@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<occi:Extension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:occi="http://schemas.ogf.org/occi/core/ecore" name="openfoam" scheme="http://schemas.modmacao.org/openfoam#">
+  <import href="http://schemas.modmacao.org/modmacao#/"/>
+  <import href="http://schemas.modmacao.org/toscabasetypes#/"/>
+  <import href="http://schemas.modmacao.org/toscaspecifictypes#/"/>
+  <mixins name="Gateway" scheme="http://schemas.modmacao.org/openfoam#">
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
+  </mixins>
+  <mixins name="MPIWorker" scheme="http://schemas.modmacao.org/openfoam#">
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
+  </mixins>
+  <mixins name="Volume" scheme="http://schemas.modmacao.org/openfoam#">
+    <attributes name="size">
+      <type xsi:type="occi:StringType" href="http://schemas.ogf.org/occi/core#//@types.0"/>
+    </attributes>
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
+  </mixins>
+  <mixins name="PublicIP" scheme="http://schemas.modmacao.org/openfoam#">
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
+  </mixins>
+  <mixins name="CloudServer" scheme="http://schemas.modmacao.org/openfoam#">
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
+  </mixins>
+  <mixins name="OpenFOAM" scheme="http://schemas.modmacao.org/openfoam#">
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
+  </mixins>
+  <mixins name="NFSServer" scheme="http://schemas.modmacao.org/openfoam#">
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
+  </mixins>
+  <mixins name="NFSClient" scheme="http://schemas.modmacao.org/openfoam#">
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
+  </mixins>
+</occi:Extension>
