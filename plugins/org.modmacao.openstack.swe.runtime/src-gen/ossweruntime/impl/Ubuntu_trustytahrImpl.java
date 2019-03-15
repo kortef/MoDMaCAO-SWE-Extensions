@@ -164,7 +164,7 @@ public class Ubuntu_trustytahrImpl extends Os_tplImpl implements Ubuntu_trustyta
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (openstackRuntimeId: ");
 		result.append(openstackRuntimeId);
 		result.append(')');

@@ -164,7 +164,7 @@ public class Swe_mem_mediumImpl extends Mem_mediumImpl implements Swe_mem_medium
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (openstackRuntimeId: ");
 		result.append(openstackRuntimeId);
 		result.append(')');

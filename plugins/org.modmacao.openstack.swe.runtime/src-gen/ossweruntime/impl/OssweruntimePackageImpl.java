@@ -131,7 +131,7 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link OssweruntimePackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -145,7 +145,8 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 		if (isInited) return (OssweruntimePackage)EPackage.Registry.INSTANCE.getEPackage(OssweruntimePackage.eNS_URI);
 
 		// Obtain or create and register package
-		OssweruntimePackageImpl theOssweruntimePackage = (OssweruntimePackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof OssweruntimePackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new OssweruntimePackageImpl());
+		Object registeredOssweruntimePackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		OssweruntimePackageImpl theOssweruntimePackage = registeredOssweruntimePackage instanceof OssweruntimePackageImpl ? (OssweruntimePackageImpl)registeredOssweruntimePackage : new OssweruntimePackageImpl();
 
 		isInited = true;
 
@@ -166,7 +167,6 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 		// Mark meta-data to indicate it can't be changed
 		theOssweruntimePackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(OssweruntimePackage.eNS_URI, theOssweruntimePackage);
 		return theOssweruntimePackage;
@@ -461,14 +461,14 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 	 * @generated
 	 */
 	protected void createEcoreAnnotations() {
-		String source = "http://www.eclipse.org/emf/2002/Ecore";	
+		String source = "http://www.eclipse.org/emf/2002/Ecore";
 		addAnnotation
-		  (this, 
-		   source, 
+		  (this,
+		   source,
 		   new String[] {
-			 "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-			 "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
+			   "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			   "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			   "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
 		   });
 	}
 
@@ -479,17 +479,17 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 	 * @generated
 	 */
 	protected void createImportAnnotations() {
-		String source = "http://www.eclipse.org/OCL/Import";	
+		String source = "http://www.eclipse.org/OCL/Import";
 		addAnnotation
-		  (this, 
-		   source, 
+		  (this,
+		   source,
 		   new String[] {
-			 "occi", "http://schemas.ogf.org/occi/core/ecore",
-			 "infrastructure", "http://schemas.ogf.org/occi/infrastructure/ecore",
-			 "crtp", "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1/ecore",
-			 "modmacao", "http://schemas.modmacao.org/modmacao/ecore",
-			 "platform", "http://schemas.modmacao.org/occi/platform/ecore",
-			 "placement", "http://schemas.modmacao.org/placement/ecore"
+			   "occi", "http://schemas.ogf.org/occi/core/ecore",
+			   "infrastructure", "http://schemas.ogf.org/occi/infrastructure/ecore",
+			   "crtp", "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1/ecore",
+			   "modmacao", "http://schemas.modmacao.org/modmacao/ecore",
+			   "platform", "http://schemas.modmacao.org/occi/platform/ecore",
+			   "placement", "http://schemas.modmacao.org/placement/ecore"
 		   });
 	}
 

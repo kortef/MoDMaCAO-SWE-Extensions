@@ -164,7 +164,7 @@ public class Swe_mem_smallImpl extends Mem_smallImpl implements Swe_mem_small {
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (openstackRuntimeId: ");
 		result.append(openstackRuntimeId);
 		result.append(')');
