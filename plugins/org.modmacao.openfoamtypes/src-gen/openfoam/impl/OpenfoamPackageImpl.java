@@ -15,6 +15,7 @@ package openfoam.impl;
 import modmacao.ModmacaoPackage;
 
 import openfoam.Cloudserver;
+import openfoam.Connectstonfsserver;
 import openfoam.Gateway;
 import openfoam.Mpiworker;
 import openfoam.Nfsclient;
@@ -23,6 +24,7 @@ import openfoam.Openfoam;
 import openfoam.OpenfoamFactory;
 import openfoam.OpenfoamPackage;
 import openfoam.Publicip;
+import openfoam.Storageattachestoserver;
 import openfoam.Volume;
 
 import org.eclipse.cmf.occi.core.OCCIPackage;
@@ -99,6 +101,20 @@ public class OpenfoamPackageImpl extends EPackageImpl implements OpenfoamPackage
 	 * @generated
 	 */
 	private EClass nfsclientEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass storageattachestoserverEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass connectstonfsserverEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -253,6 +269,24 @@ public class OpenfoamPackageImpl extends EPackageImpl implements OpenfoamPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getStorageattachestoserver() {
+		return storageattachestoserverEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getConnectstonfsserver() {
+		return connectstonfsserverEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public OpenfoamFactory getOpenfoamFactory() {
 		return (OpenfoamFactory)getEFactoryInstance();
 	}
@@ -292,6 +326,10 @@ public class OpenfoamPackageImpl extends EPackageImpl implements OpenfoamPackage
 		nfsserverEClass = createEClass(NFSSERVER);
 
 		nfsclientEClass = createEClass(NFSCLIENT);
+
+		storageattachestoserverEClass = createEClass(STORAGEATTACHESTOSERVER);
+
+		connectstonfsserverEClass = createEClass(CONNECTSTONFSSERVER);
 	}
 
 	/**
@@ -342,6 +380,10 @@ public class OpenfoamPackageImpl extends EPackageImpl implements OpenfoamPackage
 		nfsserverEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		nfsclientEClass.getESuperTypes().add(theModmacaoPackage.getComponent());
 		nfsclientEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		storageattachestoserverEClass.getESuperTypes().add(theModmacaoPackage.getDependency());
+		storageattachestoserverEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		connectstonfsserverEClass.getESuperTypes().add(theModmacaoPackage.getDependency());
+		connectstonfsserverEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(gatewayEClass, Gateway.class, "Gateway", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -360,6 +402,10 @@ public class OpenfoamPackageImpl extends EPackageImpl implements OpenfoamPackage
 		initEClass(nfsserverEClass, Nfsserver.class, "Nfsserver", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(nfsclientEClass, Nfsclient.class, "Nfsclient", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(storageattachestoserverEClass, Storageattachestoserver.class, "Storageattachestoserver", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(connectstonfsserverEClass, Connectstonfsserver.class, "Connectstonfsserver", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

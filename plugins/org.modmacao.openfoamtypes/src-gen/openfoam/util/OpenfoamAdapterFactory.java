@@ -14,6 +14,7 @@ package openfoam.util;
 
 import modmacao.Component;
 
+import modmacao.Dependency;
 import openfoam.*;
 
 import org.eclipse.cmf.occi.core.MixinBase;
@@ -114,12 +115,24 @@ public class OpenfoamAdapterFactory extends AdapterFactoryImpl {
 				return createNfsclientAdapter();
 			}
 			@Override
+			public Adapter caseStorageattachestoserver(Storageattachestoserver object) {
+				return createStorageattachestoserverAdapter();
+			}
+			@Override
+			public Adapter caseConnectstonfsserver(Connectstonfsserver object) {
+				return createConnectstonfsserverAdapter();
+			}
+			@Override
 			public Adapter caseMixinBase(MixinBase object) {
 				return createMixinBaseAdapter();
 			}
 			@Override
 			public Adapter caseComponent(Component object) {
 				return createComponentAdapter();
+			}
+			@Override
+			public Adapter caseDependency(Dependency object) {
+				return createDependencyAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -254,6 +267,34 @@ public class OpenfoamAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link openfoam.Storageattachestoserver <em>Storageattachestoserver</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see openfoam.Storageattachestoserver
+	 * @generated
+	 */
+	public Adapter createStorageattachestoserverAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link openfoam.Connectstonfsserver <em>Connectstonfsserver</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see openfoam.Connectstonfsserver
+	 * @generated
+	 */
+	public Adapter createConnectstonfsserverAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.cmf.occi.core.MixinBase <em>Mixin Base</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -278,6 +319,20 @@ public class OpenfoamAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createComponentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link modmacao.Dependency <em>Dependency</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see modmacao.Dependency
+	 * @generated
+	 */
+	public Adapter createDependencyAdapter() {
 		return null;
 	}
 

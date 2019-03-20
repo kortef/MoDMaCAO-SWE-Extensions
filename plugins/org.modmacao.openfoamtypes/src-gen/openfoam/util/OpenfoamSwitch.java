@@ -14,6 +14,7 @@ package openfoam.util;
 
 import modmacao.Component;
 
+import modmacao.Dependency;
 import openfoam.*;
 
 import org.eclipse.cmf.occi.core.MixinBase;
@@ -144,6 +145,22 @@ public class OpenfoamSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case OpenfoamPackage.STORAGEATTACHESTOSERVER: {
+				Storageattachestoserver storageattachestoserver = (Storageattachestoserver)theEObject;
+				T result = caseStorageattachestoserver(storageattachestoserver);
+				if (result == null) result = caseDependency(storageattachestoserver);
+				if (result == null) result = caseMixinBase(storageattachestoserver);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case OpenfoamPackage.CONNECTSTONFSSERVER: {
+				Connectstonfsserver connectstonfsserver = (Connectstonfsserver)theEObject;
+				T result = caseConnectstonfsserver(connectstonfsserver);
+				if (result == null) result = caseDependency(connectstonfsserver);
+				if (result == null) result = caseMixinBase(connectstonfsserver);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -269,6 +286,36 @@ public class OpenfoamSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Storageattachestoserver</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Storageattachestoserver</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStorageattachestoserver(Storageattachestoserver object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Connectstonfsserver</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Connectstonfsserver</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConnectstonfsserver(Connectstonfsserver object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Mixin Base</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -295,6 +342,21 @@ public class OpenfoamSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseComponent(Component object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Dependency</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Dependency</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDependency(Dependency object) {
 		return null;
 	}
 

@@ -88,22 +88,26 @@ public class OpenfoamTables
 		}
 
 		public static final /*@NonNull*/ EcoreExecutorType _Cloudserver = new EcoreExecutorType(OpenfoamPackage.Literals.CLOUDSERVER, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Connectstonfsserver = new EcoreExecutorType(OpenfoamPackage.Literals.CONNECTSTONFSSERVER, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Gateway = new EcoreExecutorType(OpenfoamPackage.Literals.GATEWAY, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Mpiworker = new EcoreExecutorType(OpenfoamPackage.Literals.MPIWORKER, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Nfsclient = new EcoreExecutorType(OpenfoamPackage.Literals.NFSCLIENT, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Nfsserver = new EcoreExecutorType(OpenfoamPackage.Literals.NFSSERVER, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Openfoam = new EcoreExecutorType(OpenfoamPackage.Literals.OPENFOAM, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Publicip = new EcoreExecutorType(OpenfoamPackage.Literals.PUBLICIP, PACKAGE, 0);
+		public static final /*@NonNull*/ EcoreExecutorType _Storageattachestoserver = new EcoreExecutorType(OpenfoamPackage.Literals.STORAGEATTACHESTOSERVER, PACKAGE, 0);
 		public static final /*@NonNull*/ EcoreExecutorType _Volume = new EcoreExecutorType(OpenfoamPackage.Literals.VOLUME, PACKAGE, 0);
 
 		private static final /*@NonNull*/ EcoreExecutorType /*@NonNull*/ [] types = {
 			_Cloudserver,
+			_Connectstonfsserver,
 			_Gateway,
 			_Mpiworker,
 			_Nfsclient,
 			_Nfsserver,
 			_Openfoam,
 			_Publicip,
+			_Storageattachestoserver,
 			_Volume
 		};
 
@@ -135,6 +139,12 @@ public class OpenfoamTables
 		private static final /*@NonNull*/ ExecutorFragment _Cloudserver__MixinBase = new ExecutorFragment(Types._Cloudserver, OCCITables.Types._MixinBase);
 		private static final /*@NonNull*/ ExecutorFragment _Cloudserver__OclAny = new ExecutorFragment(Types._Cloudserver, OCLstdlibTables.Types._OclAny);
 		private static final /*@NonNull*/ ExecutorFragment _Cloudserver__OclElement = new ExecutorFragment(Types._Cloudserver, OCLstdlibTables.Types._OclElement);
+
+		private static final /*@NonNull*/ ExecutorFragment _Connectstonfsserver__Connectstonfsserver = new ExecutorFragment(Types._Connectstonfsserver, OpenfoamTables.Types._Connectstonfsserver);
+		private static final /*@NonNull*/ ExecutorFragment _Connectstonfsserver__Dependency = new ExecutorFragment(Types._Connectstonfsserver, ModmacaoTables.Types._Dependency);
+		private static final /*@NonNull*/ ExecutorFragment _Connectstonfsserver__MixinBase = new ExecutorFragment(Types._Connectstonfsserver, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Connectstonfsserver__OclAny = new ExecutorFragment(Types._Connectstonfsserver, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Connectstonfsserver__OclElement = new ExecutorFragment(Types._Connectstonfsserver, OCLstdlibTables.Types._OclElement);
 
 		private static final /*@NonNull*/ ExecutorFragment _Gateway__Component = new ExecutorFragment(Types._Gateway, ModmacaoTables.Types._Component);
 		private static final /*@NonNull*/ ExecutorFragment _Gateway__Gateway = new ExecutorFragment(Types._Gateway, OpenfoamTables.Types._Gateway);
@@ -171,6 +181,12 @@ public class OpenfoamTables
 		private static final /*@NonNull*/ ExecutorFragment _Publicip__OclAny = new ExecutorFragment(Types._Publicip, OCLstdlibTables.Types._OclAny);
 		private static final /*@NonNull*/ ExecutorFragment _Publicip__OclElement = new ExecutorFragment(Types._Publicip, OCLstdlibTables.Types._OclElement);
 		private static final /*@NonNull*/ ExecutorFragment _Publicip__Publicip = new ExecutorFragment(Types._Publicip, OpenfoamTables.Types._Publicip);
+
+		private static final /*@NonNull*/ ExecutorFragment _Storageattachestoserver__Dependency = new ExecutorFragment(Types._Storageattachestoserver, ModmacaoTables.Types._Dependency);
+		private static final /*@NonNull*/ ExecutorFragment _Storageattachestoserver__MixinBase = new ExecutorFragment(Types._Storageattachestoserver, OCCITables.Types._MixinBase);
+		private static final /*@NonNull*/ ExecutorFragment _Storageattachestoserver__OclAny = new ExecutorFragment(Types._Storageattachestoserver, OCLstdlibTables.Types._OclAny);
+		private static final /*@NonNull*/ ExecutorFragment _Storageattachestoserver__OclElement = new ExecutorFragment(Types._Storageattachestoserver, OCLstdlibTables.Types._OclElement);
+		private static final /*@NonNull*/ ExecutorFragment _Storageattachestoserver__Storageattachestoserver = new ExecutorFragment(Types._Storageattachestoserver, OpenfoamTables.Types._Storageattachestoserver);
 
 		private static final /*@NonNull*/ ExecutorFragment _Volume__Component = new ExecutorFragment(Types._Volume, ModmacaoTables.Types._Component);
 		private static final /*@NonNull*/ ExecutorFragment _Volume__MixinBase = new ExecutorFragment(Types._Volume, OCCITables.Types._MixinBase);
@@ -279,6 +295,16 @@ public class OpenfoamTables
 			};
 		private static final int /*@NonNull*/ [] __Cloudserver = { 1,1,1,1,1 };
 
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Connectstonfsserver =
+			{
+				Fragments._Connectstonfsserver__OclAny /* 0 */,
+				Fragments._Connectstonfsserver__OclElement /* 1 */,
+				Fragments._Connectstonfsserver__MixinBase /* 2 */,
+				Fragments._Connectstonfsserver__Dependency /* 3 */,
+				Fragments._Connectstonfsserver__Connectstonfsserver /* 4 */
+			};
+		private static final int /*@NonNull*/ [] __Connectstonfsserver = { 1,1,1,1,1 };
+
 		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Gateway =
 			{
 				Fragments._Gateway__OclAny /* 0 */,
@@ -339,6 +365,16 @@ public class OpenfoamTables
 			};
 		private static final int /*@NonNull*/ [] __Publicip = { 1,1,1,1,1 };
 
+		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Storageattachestoserver =
+			{
+				Fragments._Storageattachestoserver__OclAny /* 0 */,
+				Fragments._Storageattachestoserver__OclElement /* 1 */,
+				Fragments._Storageattachestoserver__MixinBase /* 2 */,
+				Fragments._Storageattachestoserver__Dependency /* 3 */,
+				Fragments._Storageattachestoserver__Storageattachestoserver /* 4 */
+			};
+		private static final int /*@NonNull*/ [] __Storageattachestoserver = { 1,1,1,1,1 };
+
 		private static final /*@NonNull*/ ExecutorFragment /*@NonNull*/ [] _Volume =
 			{
 				Fragments._Volume__OclAny /* 0 */,
@@ -354,12 +390,14 @@ public class OpenfoamTables
 		 */
 		static {
 			Types._Cloudserver.initFragments(_Cloudserver, __Cloudserver);
+			Types._Connectstonfsserver.initFragments(_Connectstonfsserver, __Connectstonfsserver);
 			Types._Gateway.initFragments(_Gateway, __Gateway);
 			Types._Mpiworker.initFragments(_Mpiworker, __Mpiworker);
 			Types._Nfsclient.initFragments(_Nfsclient, __Nfsclient);
 			Types._Nfsserver.initFragments(_Nfsserver, __Nfsserver);
 			Types._Openfoam.initFragments(_Openfoam, __Openfoam);
 			Types._Publicip.initFragments(_Publicip, __Publicip);
+			Types._Storageattachestoserver.initFragments(_Storageattachestoserver, __Storageattachestoserver);
 			Types._Volume.initFragments(_Volume, __Volume);
 
 			Init.initEnd();
@@ -401,6 +439,36 @@ public class OpenfoamTables
 			OCLstdlibTables.Operations._OclAny__toString /* toString() */
 		};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Cloudserver__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
+
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Connectstonfsserver__Connectstonfsserver = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Connectstonfsserver__Dependency = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Connectstonfsserver__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Connectstonfsserver__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Connectstonfsserver__OclElement = {
 			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
 			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
 			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
@@ -590,6 +658,36 @@ public class OpenfoamTables
 			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
 		};
 
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Storageattachestoserver__Storageattachestoserver = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Storageattachestoserver__Dependency = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Storageattachestoserver__MixinBase = {};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Storageattachestoserver__OclAny = {
+			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
+			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
+			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
+			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
+			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
+			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[?]) */,
+			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
+			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
+			OCLstdlibTables.Operations._OclAny__toString /* toString() */
+		};
+		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Storageattachestoserver__OclElement = {
+			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
+			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
+			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
+			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[?]) */,
+			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
+			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
+		};
+
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Volume__Volume = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Volume__Component = {};
 		private static final /*@NonNull*/ ExecutorOperation /*@NonNull*/ [] _Volume__MixinBase = {};
@@ -630,6 +728,12 @@ public class OpenfoamTables
 			Fragments._Cloudserver__OclAny.initOperations(_Cloudserver__OclAny);
 			Fragments._Cloudserver__OclElement.initOperations(_Cloudserver__OclElement);
 
+			Fragments._Connectstonfsserver__Connectstonfsserver.initOperations(_Connectstonfsserver__Connectstonfsserver);
+			Fragments._Connectstonfsserver__Dependency.initOperations(_Connectstonfsserver__Dependency);
+			Fragments._Connectstonfsserver__MixinBase.initOperations(_Connectstonfsserver__MixinBase);
+			Fragments._Connectstonfsserver__OclAny.initOperations(_Connectstonfsserver__OclAny);
+			Fragments._Connectstonfsserver__OclElement.initOperations(_Connectstonfsserver__OclElement);
+
 			Fragments._Gateway__Component.initOperations(_Gateway__Component);
 			Fragments._Gateway__Gateway.initOperations(_Gateway__Gateway);
 			Fragments._Gateway__MixinBase.initOperations(_Gateway__MixinBase);
@@ -666,6 +770,12 @@ public class OpenfoamTables
 			Fragments._Publicip__OclElement.initOperations(_Publicip__OclElement);
 			Fragments._Publicip__Publicip.initOperations(_Publicip__Publicip);
 
+			Fragments._Storageattachestoserver__Dependency.initOperations(_Storageattachestoserver__Dependency);
+			Fragments._Storageattachestoserver__MixinBase.initOperations(_Storageattachestoserver__MixinBase);
+			Fragments._Storageattachestoserver__OclAny.initOperations(_Storageattachestoserver__OclAny);
+			Fragments._Storageattachestoserver__OclElement.initOperations(_Storageattachestoserver__OclElement);
+			Fragments._Storageattachestoserver__Storageattachestoserver.initOperations(_Storageattachestoserver__Storageattachestoserver);
+
 			Fragments._Volume__Component.initOperations(_Volume__Component);
 			Fragments._Volume__MixinBase.initOperations(_Volume__MixinBase);
 			Fragments._Volume__OclAny.initOperations(_Volume__OclAny);
@@ -692,6 +802,8 @@ public class OpenfoamTables
 
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Cloudserver = {};
 
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Connectstonfsserver = {};
+
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Gateway = {};
 
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Mpiworker = {};
@@ -704,6 +816,8 @@ public class OpenfoamTables
 
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Publicip = {};
 
+		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Storageattachestoserver = {};
+
 		private static final /*@NonNull*/ ExecutorProperty /*@NonNull*/ [] _Volume = {
 			OpenfoamTables.Properties._Volume__size
 		};
@@ -713,12 +827,14 @@ public class OpenfoamTables
 		 */
 		static {
 			Fragments._Cloudserver__Cloudserver.initProperties(_Cloudserver);
+			Fragments._Connectstonfsserver__Connectstonfsserver.initProperties(_Connectstonfsserver);
 			Fragments._Gateway__Gateway.initProperties(_Gateway);
 			Fragments._Mpiworker__Mpiworker.initProperties(_Mpiworker);
 			Fragments._Nfsclient__Nfsclient.initProperties(_Nfsclient);
 			Fragments._Nfsserver__Nfsserver.initProperties(_Nfsserver);
 			Fragments._Openfoam__Openfoam.initProperties(_Openfoam);
 			Fragments._Publicip__Publicip.initProperties(_Publicip);
+			Fragments._Storageattachestoserver__Storageattachestoserver.initProperties(_Storageattachestoserver);
 			Fragments._Volume__Volume.initProperties(_Volume);
 
 			Init.initEnd();

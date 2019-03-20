@@ -33,6 +33,12 @@
     <genClasses>
       <ecoreClass href="openfoamtypes.ecore#//Nfsclient"/>
     </genClasses>
+    <genClasses>
+      <ecoreClass href="openfoamtypes.ecore#//Storageattachestoserver"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="openfoamtypes.ecore#//Connectstonfsserver"/>
+    </genClasses>
   </genPackages>
   <usedGenPackages href="platform:/plugin/org.modmacao.core/model/modmacao.genmodel#//modmacao"/>
   <usedGenPackages href="platform:/resource/org.modmacao.toscabasetypes/model/toscabasetypes.genmodel#//toscabasetypes"/>

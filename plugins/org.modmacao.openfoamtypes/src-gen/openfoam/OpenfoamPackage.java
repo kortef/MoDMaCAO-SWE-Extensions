@@ -590,6 +590,118 @@ public interface OpenfoamPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link openfoam.impl.StorageattachestoserverImpl <em>Storageattachestoserver</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see openfoam.impl.StorageattachestoserverImpl
+	 * @see openfoam.impl.OpenfoamPackageImpl#getStorageattachestoserver()
+	 * @generated
+	 */
+	int STORAGEATTACHESTOSERVER = 8;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGEATTACHESTOSERVER__MIXIN = ModmacaoPackage.DEPENDENCY__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGEATTACHESTOSERVER__ENTITY = ModmacaoPackage.DEPENDENCY__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGEATTACHESTOSERVER__ATTRIBUTES = ModmacaoPackage.DEPENDENCY__ATTRIBUTES;
+
+	/**
+	 * The number of structural features of the '<em>Storageattachestoserver</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGEATTACHESTOSERVER_FEATURE_COUNT = ModmacaoPackage.DEPENDENCY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Storageattachestoserver</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGEATTACHESTOSERVER_OPERATION_COUNT = ModmacaoPackage.DEPENDENCY_OPERATION_COUNT + 0;
+
+
+	/**
+	 * The meta object id for the '{@link openfoam.impl.ConnectstonfsserverImpl <em>Connectstonfsserver</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see openfoam.impl.ConnectstonfsserverImpl
+	 * @see openfoam.impl.OpenfoamPackageImpl#getConnectstonfsserver()
+	 * @generated
+	 */
+	int CONNECTSTONFSSERVER = 9;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTSTONFSSERVER__MIXIN = ModmacaoPackage.DEPENDENCY__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTSTONFSSERVER__ENTITY = ModmacaoPackage.DEPENDENCY__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTSTONFSSERVER__ATTRIBUTES = ModmacaoPackage.DEPENDENCY__ATTRIBUTES;
+
+	/**
+	 * The number of structural features of the '<em>Connectstonfsserver</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTSTONFSSERVER_FEATURE_COUNT = ModmacaoPackage.DEPENDENCY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Connectstonfsserver</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTSTONFSSERVER_OPERATION_COUNT = ModmacaoPackage.DEPENDENCY_OPERATION_COUNT + 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link openfoam.Gateway <em>Gateway</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -679,6 +791,26 @@ public interface OpenfoamPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getNfsclient();
+
+	/**
+	 * Returns the meta object for class '{@link openfoam.Storageattachestoserver <em>Storageattachestoserver</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Storageattachestoserver</em>'.
+	 * @see openfoam.Storageattachestoserver
+	 * @generated
+	 */
+	EClass getStorageattachestoserver();
+
+	/**
+	 * Returns the meta object for class '{@link openfoam.Connectstonfsserver <em>Connectstonfsserver</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Connectstonfsserver</em>'.
+	 * @see openfoam.Connectstonfsserver
+	 * @generated
+	 */
+	EClass getConnectstonfsserver();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -790,6 +922,26 @@ public interface OpenfoamPackage extends EPackage {
 		 * @generated
 		 */
 		EClass NFSCLIENT = eINSTANCE.getNfsclient();
+
+		/**
+		 * The meta object literal for the '{@link openfoam.impl.StorageattachestoserverImpl <em>Storageattachestoserver</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see openfoam.impl.StorageattachestoserverImpl
+		 * @see openfoam.impl.OpenfoamPackageImpl#getStorageattachestoserver()
+		 * @generated
+		 */
+		EClass STORAGEATTACHESTOSERVER = eINSTANCE.getStorageattachestoserver();
+
+		/**
+		 * The meta object literal for the '{@link openfoam.impl.ConnectstonfsserverImpl <em>Connectstonfsserver</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see openfoam.impl.ConnectstonfsserverImpl
+		 * @see openfoam.impl.OpenfoamPackageImpl#getConnectstonfsserver()
+		 * @generated
+		 */
+		EClass CONNECTSTONFSSERVER = eINSTANCE.getConnectstonfsserver();
 
 	}
 

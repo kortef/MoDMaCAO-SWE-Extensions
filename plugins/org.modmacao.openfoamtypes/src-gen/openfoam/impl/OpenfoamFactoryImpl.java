@@ -74,6 +74,8 @@ public class OpenfoamFactoryImpl extends EFactoryImpl implements OpenfoamFactory
 			case OpenfoamPackage.OPENFOAM: return createOpenfoam();
 			case OpenfoamPackage.NFSSERVER: return createNfsserver();
 			case OpenfoamPackage.NFSCLIENT: return createNfsclient();
+			case OpenfoamPackage.STORAGEATTACHESTOSERVER: return createStorageattachestoserver();
+			case OpenfoamPackage.CONNECTSTONFSSERVER: return createConnectstonfsserver();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -157,6 +159,26 @@ public class OpenfoamFactoryImpl extends EFactoryImpl implements OpenfoamFactory
 	public Nfsclient createNfsclient() {
 		NfsclientImpl nfsclient = new NfsclientImpl();
 		return nfsclient;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Storageattachestoserver createStorageattachestoserver() {
+		StorageattachestoserverImpl storageattachestoserver = new StorageattachestoserverImpl();
+		return storageattachestoserver;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Connectstonfsserver createConnectstonfsserver() {
+		ConnectstonfsserverImpl connectstonfsserver = new ConnectstonfsserverImpl();
+		return connectstonfsserver;
 	}
 
 	/**

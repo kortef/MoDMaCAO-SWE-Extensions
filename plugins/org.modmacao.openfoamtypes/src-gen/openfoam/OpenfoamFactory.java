@@ -104,6 +104,24 @@ public interface OpenfoamFactory extends EFactory {
 	Nfsclient createNfsclient();
 
 	/**
+	 * Returns a new object of class '<em>Storageattachestoserver</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Storageattachestoserver</em>'.
+	 * @generated
+	 */
+	Storageattachestoserver createStorageattachestoserver();
+
+	/**
+	 * Returns a new object of class '<em>Connectstonfsserver</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Connectstonfsserver</em>'.
+	 * @generated
+	 */
+	Connectstonfsserver createConnectstonfsserver();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

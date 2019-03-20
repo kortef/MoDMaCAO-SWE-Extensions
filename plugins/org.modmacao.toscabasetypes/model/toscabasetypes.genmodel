@@ -1,62 +1,35 @@
 <?xml version="1.0" encoding="ASCII"?>
-<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2015-2017 Obeo, Inria&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#x9;&#xA;Contributors:&#xA;- William Piers &lt;william.piers@obeo.fr>&#xA;- Philippe Merle &lt;philippe.merle@inria.fr>&#xA;- Faiez Zalila &lt;faiez.zalila@inria.fr>" modelDirectory="/org.modmacao.toscabasetypes/src-gen" editDirectory="/org.modmacao.toscabasetypes.edit/src-gen" editorDirectory="/org.modmacao.toscabasetypes.editor/src-gen" modelPluginID="org.modmacao.toscabasetypes" modelName="Toscabasetypes" testsDirectory="/org.modmacao.toscabasetypes.tests/src" complianceLevel="8.0" copyrightFields="false" editPluginID="org.modmacao.toscabasetypes.edit" editorPluginID="org.modmacao.toscabasetypes.editor" testsPluginID="org.modmacao.toscabasetypes.tests" operationReflection="true">
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2015-2017 Obeo, Inria&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#x9;&#xA;Contributors:&#xA;- William Piers &lt;william.piers@obeo.fr>&#xA;- Philippe Merle &lt;philippe.merle@inria.fr>&#xA;- Faiez Zalila &lt;faiez.zalila@inria.fr>"
+    modelDirectory="/org.modmacao.toscabasetypes/src-gen" editDirectory="/org.modmacao.toscabasetypes.edit/src-gen"
+    editorDirectory="/org.modmacao.toscabasetypes.editor/src-gen" modelPluginID="org.modmacao.toscabasetypes"
+    modelName="Toscabasetypes" testsDirectory="/org.modmacao.toscabasetypes.tests/src"
+    complianceLevel="8.0" copyrightFields="false" editPluginID="org.modmacao.toscabasetypes.edit"
+    editorPluginID="org.modmacao.toscabasetypes.editor" testsPluginID="org.modmacao.toscabasetypes.tests"
+    usedGenPackages="platform:/plugin/org.modmacao.occi.platform/model/platform.genmodel#//platform platform:/plugin/org.modmacao.core/model/modmacao.genmodel#//modmacao platform:/plugin/org.modmacao.placement/model/placement.genmodel#//placement platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.genmodel#//occi"
+    operationReflection="true">
   <genAnnotations source="http://www.eclipse.org/OCL/GenModel">
     <details key="Use Delegates" value="false"/>
   </genAnnotations>
   <foreignModel>toscabasetypes.ecore</foreignModel>
-  <genPackages prefix="Toscabasetypes" basePackage="org.modmacao" disposableProviderFactory="true">
-    <ecorePackage href="toscabasetypes.ecore#/"/>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Rootnodetype"/>
+  <genPackages prefix="Toscabasetypes" basePackage="org.modmacao" disposableProviderFactory="true"
+      ecorePackage="toscabasetypes.ecore#/">
+    <genClasses ecoreClass="toscabasetypes.ecore#//Rootnodetype"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Tier"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Singlenodetier"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Scalabletier"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Server">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute toscabasetypes.ecore#//Server/memory"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute toscabasetypes.ecore#//Server/numCpus"/>
     </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Tier"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Singlenodetier"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Scalabletier"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Server"/>
-      <genFeatures property="None" children="true" createChild="true">
-        <ecoreFeature xsi:type="ecore:EReference" href="toscabasetypes.ecore#//Server/numCpus"/>
-      </genFeatures>
-      <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="toscabasetypes.ecore#//Server/memory"/>
-      </genFeatures>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Operatingsystem"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Webserver"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Webapplication"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Dbms"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Database"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Rootrelationshiptype"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Hostedon"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Dependson"/>
-    </genClasses>
-    <genClasses>
-      <ecoreClass href="toscabasetypes.ecore#//Connectsto"/>
-    </genClasses>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Operatingsystem"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Webserver"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Webapplication"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Dbms"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Database"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Rootrelationshiptype"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Hostedon"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Dependson"/>
+    <genClasses ecoreClass="toscabasetypes.ecore#//Connectsto"/>
   </genPackages>
-  <usedGenPackages href="platform:/plugin/org.modmacao.occi.platform/model/platform.genmodel#//platform"/>
-  <usedGenPackages href="platform:/plugin/org.modmacao.core/model/modmacao.genmodel#//modmacao"/>
-  <usedGenPackages href="platform:/plugin/org.modmacao.placement/model/placement.genmodel#//placement"/>
-  <usedGenPackages href="platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.genmodel#//occi"/>
 </genmodel:GenModel>

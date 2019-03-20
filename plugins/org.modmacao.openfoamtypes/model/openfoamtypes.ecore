@@ -26,4 +26,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="Openfoam" eSuperTypes="platform:/plugin/org.modmacao.core/model/modmacao.ecore#//Component platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase"/>
   <eClassifiers xsi:type="ecore:EClass" name="Nfsserver" eSuperTypes="platform:/plugin/org.modmacao.core/model/modmacao.ecore#//Component platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase"/>
   <eClassifiers xsi:type="ecore:EClass" name="Nfsclient" eSuperTypes="platform:/plugin/org.modmacao.core/model/modmacao.ecore#//Component platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Storageattachestoserver" eSuperTypes="platform:/plugin/org.modmacao.core/model/modmacao.ecore#//Dependency platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Connectstonfsserver" eSuperTypes="platform:/plugin/org.modmacao.core/model/modmacao.ecore#//Dependency platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.ecore#//MixinBase"/>
 </ecore:EPackage>
