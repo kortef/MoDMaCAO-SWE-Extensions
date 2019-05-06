@@ -3,16 +3,14 @@
   <import href="http://schemas.modmacao.org/modmacao#/"/>
   <import href="http://schemas.modmacao.org/toscabasetypes#/"/>
   <import href="http://schemas.modmacao.org/toscaspecifictypes#/"/>
-  <mixins name="Gateway" scheme="http://schemas.modmacao.org/openfoam#">
+ <mixins name="Gateway" scheme="http://schemas.modmacao.org/openfoam#">
     <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
   </mixins>
   <mixins name="MPIWorker" scheme="http://schemas.modmacao.org/openfoam#">
     <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
   </mixins>
   <mixins name="Volume" scheme="http://schemas.modmacao.org/openfoam#">
-    <attributes name="size">
-      <type xsi:type="occi:StringType" href="http://schemas.ogf.org/occi/core#//@types.0"/>
-    </attributes>
+    <attributes name="size"/>
     <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
   </mixins>
   <mixins name="PublicIP" scheme="http://schemas.modmacao.org/openfoam#">
@@ -30,10 +28,13 @@
   <mixins name="NFSClient" scheme="http://schemas.modmacao.org/openfoam#">
     <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='component']"/>
   </mixins>
-    <mixins name="StorageAttachesToServer" scheme="http://schemas.modmacao.org/openfoam#">
+  <mixins name="StorageAttachesToServer" scheme="http://schemas.modmacao.org/openfoam#">
     <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='dependency']"/>
   </mixins>
-   <mixins name="ConnectsToNFSServer" scheme="http://schemas.modmacao.org/openfoam#">
+  <mixins name="ConnectsToNFSServer" scheme="http://schemas.modmacao.org/openfoam#">
+    <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='dependency']"/>
+  </mixins>
+  <mixins name="SubmitsToMPIWorker" scheme="http://schemas.modmacao.org/openfoam#">
     <depends href="http://schemas.modmacao.org/modmacao#//@mixins[term='dependency']"/>
   </mixins>
 </occi:Extension>
