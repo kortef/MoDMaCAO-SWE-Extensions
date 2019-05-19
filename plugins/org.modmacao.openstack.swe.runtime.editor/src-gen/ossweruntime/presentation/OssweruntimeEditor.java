@@ -601,9 +601,8 @@ public class OssweruntimeEditor
 	 */
 	protected void handleChangedResources() {
 		if (!changedResources.isEmpty() && (!isDirty() || handleDirtyConflict())) {
-			ResourceSet resourceSet = editingDomain.getResourceSet();
 			if (isDirty()) {
-				changedResources.addAll(resourceSet.getResources());
+				changedResources.addAll(editingDomain.getResourceSet().getResources());
 			}
 			editingDomain.getCommandStack().flush();
 
@@ -612,7 +611,7 @@ public class OssweruntimeEditor
 				if (resource.isLoaded()) {
 					resource.unload();
 					try {
-						resource.load(resourceSet.getLoadOptions());
+						resource.load(Collections.EMPTY_MAP);
 					}
 					catch (IOException exception) {
 						if (!resourceToDiagnosticMap.containsKey(resource)) {
@@ -1250,9 +1249,7 @@ public class OssweruntimeEditor
 			getSite().getShell().getDisplay().asyncExec
 				(new Runnable() {
 					 public void run() {
-						 if (!getContainer().isDisposed()) {
-							 setActivePage(0);
-						 }
+						 setActivePage(0);
 					 }
 				 });
 		}
@@ -1292,9 +1289,9 @@ public class OssweruntimeEditor
 		if (getPageCount() <= 1) {
 			setPageText(0, "");
 			if (getContainer() instanceof CTabFolder) {
+				((CTabFolder)getContainer()).setTabHeight(1);
 				Point point = getContainer().getSize();
-				Rectangle clientArea = getContainer().getClientArea();
-				getContainer().setSize(point.x,  2 * point.y - clientArea.height - clientArea.y);
+				getContainer().setSize(point.x, point.y + 6);
 			}
 		}
 	}
@@ -1310,9 +1307,9 @@ public class OssweruntimeEditor
 		if (getPageCount() > 1) {
 			setPageText(0, getString("_UI_SelectionPage_label"));
 			if (getContainer() instanceof CTabFolder) {
+				((CTabFolder)getContainer()).setTabHeight(SWT.DEFAULT);
 				Point point = getContainer().getSize();
-				Rectangle clientArea = getContainer().getClientArea();
-				getContainer().setSize(point.x, clientArea.height + clientArea.y);
+				getContainer().setSize(point.x, point.y - 6);
 			}
 		}
 	}
@@ -1338,16 +1335,17 @@ public class OssweruntimeEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("rawtypes")
 	@Override
-	public <T> T getAdapter(Class<T> key) {
+	public Object getAdapter(Class key) {
 		if (key.equals(IContentOutlinePage.class)) {
-			return showOutlineView() ? key.cast(getContentOutlinePage()) : null;
+			return showOutlineView() ? getContentOutlinePage() : null;
 		}
 		else if (key.equals(IPropertySheetPage.class)) {
-			return key.cast(getPropertySheetPage());
+			return getPropertySheetPage();
 		}
 		else if (key.equals(IGotoMarker.class)) {
-			return key.cast(this);
+			return this;
 		}
 		else {
 			return super.getAdapter(key);
@@ -1427,7 +1425,7 @@ public class OssweruntimeEditor
 	 */
 	public IPropertySheetPage getPropertySheetPage() {
 		PropertySheetPage propertySheetPage =
-			new ExtendedPropertySheetPage(editingDomain, ExtendedPropertySheetPage.Decoration.NONE, null, 0, false) {
+			new ExtendedPropertySheetPage(editingDomain) {
 				@Override
 				public void setSelectionToViewer(List<?> selection) {
 					OssweruntimeEditor.this.setSelectionToViewer(selection);

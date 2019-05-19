@@ -22,5 +22,5 @@ Require-Bundle: org.eclipse.core.runtime,
  org.modmacao.placement.edit;visibility:=reexport,
  org.eclipse.cmf.occi.core.edit;visibility:=reexport
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-10
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 
