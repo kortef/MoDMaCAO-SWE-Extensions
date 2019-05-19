@@ -74,7 +74,7 @@ public class GenerateAll {
 		}
 		
 		monitor.subTask("Loading...");
-		org.modmacao.cm.ansible.Generate gen0 = new org.modmacao.cm.ansible.Generate(modelURI, targetFolder.getLocation().toFile(), arguments);
+		org.modmacao.cm.ansible.RolesGenerator gen0 = new org.modmacao.cm.ansible.RolesGenerator(modelURI, targetFolder.getLocation().toFile(), arguments);
 		monitor.worked(1);
 		String generationID = org.eclipse.acceleo.engine.utils.AcceleoLaunchingUtil.computeUIProjectID("org.modmacao.cm", "org.modmacao.cm.ansible.Generate", modelURI.toString(), targetFolder.getFullPath().toString(), new ArrayList<String>());
 		gen0.setGenerationID(generationID);
