@@ -40,4 +40,4 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.cmf.occi.core;visibility:=reexport,
  org.eclipse.cmf.occi.core.ui,
  org.eclipse.cmf.occi.core.gen.emf.ui,
- org.eclipse.emf;bundle-version="2.7.0"
+ org.eclipse.emf;bundle-version="2.6.0"
