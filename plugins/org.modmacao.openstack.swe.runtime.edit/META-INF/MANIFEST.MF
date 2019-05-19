@@ -26,4 +26,4 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.cmf.occi.core.edit;visibility:=reexport,
  org.eclipse.emf.common
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-10
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
